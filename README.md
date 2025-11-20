@@ -9,3 +9,7 @@ This project explores whether high-dimensional visual embeddings from a Vision T
 ```bash
 python3 generate_data.py
 ```
+
+
+Sources:\
+Pytordch Vision transformer -> Vec2ext
