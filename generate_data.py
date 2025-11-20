@@ -2,11 +2,13 @@ import random
 import math
 import os
 import json
+import argparse
 from PIL import Image, ImageDraw, ImageFont
 
-def generate_grid_from_path(path, rows, cols, save_path, obstacle_prob=0.6, cell_size=80):
+def generate_grid_from_path(path, rows, cols, save_path, obstacle_prob=0.6, cell_size=80, seed=None):
     move_map = {"U": (-1,0), "D": (1,0), "L": (0,-1), "R": (0,1)}
-    
+    rng_local = random.Random(seed if seed is not None else args.seed)
+
     # Starting at bottom-left
     start = (rows-1, 0)
     r, c = start
@@ -30,15 +32,15 @@ def generate_grid_from_path(path, rows, cols, save_path, obstacle_prob=0.6, cell
     # Place obstacles off-path
     for rr in range(rows):
         for cc in range(cols):
-            if (rr, cc) not in path_cells and random.random() < obstacle_prob:
+            if (rr, cc) not in path_cells and rng_local.random() < obstacle_prob:
                 grid[rr][cc] = "X"
     
     # Image colors
     colors = {
         "S": (0,200,0),
-        "G": (200,0,0),
-        "X": (0,0,0),
-        "0": (230,230,230),
+        "G": (0,0,200),
+        "X": (255,0,0),
+        "0": (255,255,255),
     }
     
     img = Image.new("RGB", (cols*cell_size, rows*cell_size), "white")
@@ -74,10 +76,11 @@ def generate_grid_from_path(path, rows, cols, save_path, obstacle_prob=0.6, cell
     img.save(save_path)
     return grid
 
-def generate_random_unique_paths(rows, cols, num_sequences=50):
+def generate_random_unique_paths(rows, cols, rng, num_sequences=50):
     """
-    Generate unique random monotonic (U/R only) paths.
+    Generate unique random monotonic (U/R only) paths with reproducibility.
     """
+    
     up_moves = rows - 1
     right_moves = cols - 1
     base_moves = ["U"] * up_moves + ["R"] * right_moves
@@ -86,7 +89,7 @@ def generate_random_unique_paths(rows, cols, num_sequences=50):
     
     while len(paths) < num_sequences:
         m = base_moves[:]          # copy
-        random.shuffle(m)
+        rng.shuffle(m)             # use the local RNG
         paths.add(tuple(m))        # store immutable, unique
 
     return [list(p) for p in paths]
@@ -95,8 +98,13 @@ def num_monotonic_paths(rows, cols):
     return math.comb(rows + cols - 2, rows - 1)
 
 def generate_grids(paths):
-    for i in range(len(paths)):
-        generate_grid_from_path(paths[i], rows, cols, save_path=f"data/grids/grid_{i}.png")
+    # for i in range(len(paths)):
+    #     generate_grid_from_path(paths[i], rows, cols, save_path=f"data/grids/grid_{i}.png")
+    for i, path in enumerate(paths):
+        generate_grid_from_path(
+            path, args.rows, args.cols, save_path=f"data/grids/grid_{i}.png",
+            seed=args.seed + i   # unique but deterministic per grid
+    )
 
 def map_sequences_to_images(sequences, image_prefix="grid", output_file="data/grid_sequences.json"):
     """
@@ -128,12 +136,21 @@ def print_sequences(res):
 
 if __name__ == "__main__":
     data_path = os.path.join(os.getcwd(), "data", "grids")
-
     os.makedirs(data_path, exist_ok=True)
 
-    rows = cols = 5
-    max_num_sequences = num_monotonic_paths(rows, cols)
-    paths = generate_random_unique_paths(rows, cols, max_num_sequences)
+    parser = argparse.ArgumentParser(description='Generate addition dataset')
+    parser.add_argument('--seed', type=int, default=641,
+                        help='Random seed')
+    parser.add_argument('--cols', type=int, default=5, help='Number of cols')
+    parser.add_argument('--rows', type=int, default=5, help='Number of rows')
+ 
+    args = parser.parse_args()
+
+    rng = random.Random(args.seed)
+
+    max_num_sequences = num_monotonic_paths(args.rows, args.cols)
+    paths = generate_random_unique_paths(args.rows, args.cols, rng, max_num_sequences)
+    paths = sorted(paths)  # sort lexicographically for deterministic order
     grid_sequence = map_sequences_to_images(paths)
     generate_grids(paths)
 
