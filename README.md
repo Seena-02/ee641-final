@@ -1,4 +1,10 @@
-# ee641-final
+# High-Dimensional Visual Embedding for Language-Aligned Perception
+
+## About
+
+This project explores whether high-dimensional visual embeddings from a Vision Transformer (ViT) can preserve procedural image structure well enough for a Large Language Model (LLM) to reconstruct the sequence of steps that generated an image. Instead of predicting labels or captions, the LLM outputs program-like tokens describing how the image was built. By varying embedding dimensionality and projection mechanisms, the project investigates how representation size affects multimodal reasoning, interpretability, and the model’s ability to generate both correct and novel reconstruction sequences.
+
+## Quickstart
 
 ```bash
 python3 generate_data.py
