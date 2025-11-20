@@ -59,7 +59,7 @@ def generate_grid_from_path(path, rows, cols, save_path, obstacle_prob=0.6, cell
             draw.rectangle([x1, y1, x2, y2], fill=colors[cell], outline=(100, 100, 100))
 
             # Draw label for S,G,X
-            if cell in ["S", "G", "X"]:
+            if cell in ["S", "G"]:
                 bbox = draw.textbbox((0, 0), cell, font=font)
                 w = bbox[2] - bbox[0]
                 h = bbox[3] - bbox[1]
