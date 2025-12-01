@@ -12,5 +12,6 @@ python3 generate_data.py
 
 
 Sources:\
-Pytordch Vision transformer -> Vec2ext
-https://ankur3107.github.io/blogs/the-illustrated-image-captioning-using-transformers/
+Pytordch Vision transformer -> Vec2ext\
+https://ankur3107.github.io/blogs/the-illustrated-image-captioning-using-transformers/\
+https://github.com/lucidrains/MaMMUT-pytorch\
