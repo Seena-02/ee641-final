@@ -1,5 +1,8 @@
 data/
 .DS_Store
+maze-model/
+results/
+trained_maze_vit_gpt2/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
