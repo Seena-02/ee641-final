@@ -118,7 +118,7 @@ def map_sequences_to_images(sequences, image_prefix="grid", output_file="data/gr
         grid_sequence.append({
             "id": i,
             "sequence": seq,
-            "image": f"grids/{image_prefix}_{i}.png"
+            "image": f"data/grids/{image_prefix}_{i}.png"
         })
 
     with open(output_file, "w") as f:
