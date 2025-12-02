@@ -3,6 +3,12 @@ data/
 maze-model/
 results/
 trained_maze_vit_gpt2/
+maze-model-debug/
+maze-model-fixed/
+maze-model-resnet/
+maze-model-unfrozen/
+resnet_gpt2_prefix.pth
+logs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
