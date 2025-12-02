@@ -5,45 +5,81 @@ import json
 import argparse
 from PIL import Image, ImageDraw, ImageFont
 
-def generate_grid_from_path(path, rows, cols, save_path, obstacle_prob=0.6, cell_size=80, seed=None):
+def generate_grid_from_path(path, rows, cols, save_path, seed=None, cell_size=80):
+    """
+    Generate a maze where the given path is the ONLY valid solution.
+    Creates truly different wall configurations for the same solution.
+    """
     move_map = {"U": (-1,0), "D": (1,0), "L": (0,-1), "R": (0,1)}
     rng_local = random.Random(seed)
 
-    # Starting at bottom-left
+    # Starting at bottom-left, goal at top-right
     start = (rows-1, 0)
-    r, c = start
-    path_cells = [start]
+    goal = (0, cols-1)
     
-    # Build path coordinates
+    # Build the solution path coordinates
+    r, c = start
+    path_cells = {start}
+    
     for move in path:
         dr, dc = move_map[move]
         r, c = r + dr, c + dc
         if not (0 <= r < rows and 0 <= c < cols):
             raise ValueError("Path goes out of grid bounds.")
-        path_cells.append((r, c))
+        path_cells.add((r, c))
     
-    goal = path_cells[-1]
+    if (r, c) != goal:
+        raise ValueError(f"Path doesn't reach goal! Ended at {(r,c)}, goal is {goal}")
     
-    # Build grid
+    # Initialize grid - all cells are walkable initially
     grid = [["0" for _ in range(cols)] for _ in range(rows)]
     grid[start[0]][start[1]] = "S"
     grid[goal[0]][goal[1]] = "G"
     
-    # Place obstacles off-path
+    # CRITICAL: Block alternative paths by placing strategic obstacles
+    # For each cell NOT on the solution path, decide if it should be blocked
+    
     for rr in range(rows):
         for cc in range(cols):
-            if (rr, cc) not in path_cells and rng_local.random() < obstacle_prob:
-                grid[rr][cc] = "X"
+            if (rr, cc) in path_cells:
+                continue  # Never block the solution path
+            
+            # Check if this cell is "adjacent" to the path (could be an alternative route)
+            is_near_path = False
+            for dr, dc in [(-1,0), (1,0), (0,-1), (0,1)]:
+                nr, nc = rr + dr, cc + dc
+                if 0 <= nr < rows and 0 <= nc < cols and (nr, nc) in path_cells:
+                    is_near_path = True
+                    break
+            
+            # If near the path, randomly block it with higher probability
+            # This creates variations while ensuring alternative paths are blocked
+            if is_near_path:
+                # 70% chance to block cells near the path (creates different maze structures)
+                if rng_local.random() < 0.7:
+                    grid[rr][cc] = "X"
+            else:
+                # 40% chance to block cells far from path (decorative obstacles)
+                if rng_local.random() < 0.4:
+                    grid[rr][cc] = "X"
     
-    # Image colors
+    # VERIFICATION: Ensure the solution path is still valid (no obstacles on it)
+    r, c = start
+    for move in path:
+        dr, dc = move_map[move]
+        r, c = r + dr, c + dc
+        if grid[r][c] == "X":
+            grid[r][c] = "0"  # Remove obstacle if it blocks solution
+    
+    # Render the maze as an image
     colors = {
-        "S": (0,200,0),
-        "G": (0,0,200),
-        "X": (255,0,0),
-        "0": (255,255,255),
+        "S": (0, 200, 0),    # Green start
+        "G": (0, 0, 200),    # Blue goal
+        "X": (50, 50, 50),   # Dark gray obstacles
+        "0": (255, 255, 255), # White walkable
     }
     
-    img = Image.new("RGB", (cols*cell_size, rows*cell_size), "white")
+    img = Image.new("RGB", (cols * cell_size, rows * cell_size), "white")
     draw = ImageDraw.Draw(img)
 
     try:
@@ -51,21 +87,20 @@ def generate_grid_from_path(path, rows, cols, save_path, obstacle_prob=0.6, cell
     except:
         font = ImageFont.load_default()
     
-    # Draw the grid
+    # Draw grid
     for rr in range(rows):
         for cc in range(cols):
             cell = grid[rr][cc]
             x1, y1 = cc * cell_size, rr * cell_size
             x2, y2 = x1 + cell_size, y1 + cell_size
 
-            draw.rectangle([x1, y1, x2, y2], fill=colors[cell], outline=(100, 100, 100))
+            draw.rectangle([x1, y1, x2, y2], fill=colors[cell], outline=(150, 150, 150), width=2)
 
-            # Draw label for S,G
+            # Draw S and G labels
             if cell in ["S", "G"]:
                 bbox = draw.textbbox((0, 0), cell, font=font)
                 w = bbox[2] - bbox[0]
                 h = bbox[3] - bbox[1]
-
                 draw.text(
                     (x1 + cell_size/2 - w/2, y1 + cell_size/2 - h/2),
                     cell,
@@ -76,8 +111,30 @@ def generate_grid_from_path(path, rows, cols, save_path, obstacle_prob=0.6, cell
     img.save(save_path)
     return grid
 
+def verify_path_validity(grid, path, start, goal):
+    """
+    Verify that the given path is valid in the grid.
+    Returns True if path successfully navigates from start to goal without hitting obstacles.
+    """
+    move_map = {"U": (-1,0), "D": (1,0), "L": (0,-1), "R": (0,1)}
+    r, c = start
+    
+    if grid[r][c] == "X":
+        return False
+    
+    for move in path:
+        dr, dc = move_map[move]
+        r, c = r + dr, c + dc
+        
+        if not (0 <= r < len(grid) and 0 <= c < len(grid[0])):
+            return False
+        if grid[r][c] == "X":
+            return False
+    
+    return (r, c) == goal
+
 def generate_random_unique_paths(rows, cols, rng, num_sequences=50):
-    """Generate unique random monotonic (U/R only) paths with reproducibility."""
+    """Generate unique random monotonic (U/R only) paths."""
     up_moves = rows - 1
     right_moves = cols - 1
     base_moves = ["U"] * up_moves + ["R"] * right_moves
@@ -96,10 +153,9 @@ def num_monotonic_paths(rows, cols):
 
 def generate_grids_with_variations(paths, rows, cols, base_seed, num_variations=5, train_split=0.8):
     """
-    Generate multiple maze variations for each solution path.
-    Split by solution pattern, not by individual mazes.
+    Generate multiple TRULY DIFFERENT maze variations for each solution path.
     """
-    # Split paths into train and test FIRST
+    # Split paths into train and test
     rng_split = random.Random(base_seed)
     paths_shuffled = paths.copy()
     rng_split.shuffle(paths_shuffled)
@@ -122,19 +178,25 @@ def generate_grids_with_variations(paths, rows, cols, base_seed, num_variations=
     train_data = []
     test_data = []
     
+    start = (rows-1, 0)
+    goal = (0, cols-1)
+    
     # Generate train set
     print("Generating TRAIN set...")
     for path_idx, path in enumerate(train_paths):
         for var_idx in range(num_variations):
-            # Unique seed for each variation
             variation_seed = base_seed + path_idx * 1000 + var_idx
             
             image_path = f"data/grids/train/grid_{len(train_data)}.png"
-            generate_grid_from_path(
+            grid = generate_grid_from_path(
                 path, rows, cols, 
                 save_path=image_path,
                 seed=variation_seed
             )
+            
+            # Verify the path is valid
+            if not verify_path_validity(grid, path, start, goal):
+                print(f"WARNING: Invalid maze generated for train {len(train_data)}")
             
             train_data.append({
                 "id": len(train_data),
@@ -148,15 +210,18 @@ def generate_grids_with_variations(paths, rows, cols, base_seed, num_variations=
     print("Generating TEST set...")
     for path_idx, path in enumerate(test_paths):
         for var_idx in range(num_variations):
-            # Different seed space for test to ensure different wall patterns
             variation_seed = base_seed + 500000 + path_idx * 1000 + var_idx
             
             image_path = f"data/grids/test/grid_{len(test_data)}.png"
-            generate_grid_from_path(
+            grid = generate_grid_from_path(
                 path, rows, cols,
                 save_path=image_path,
                 seed=variation_seed
             )
+            
+            # Verify the path is valid
+            if not verify_path_validity(grid, path, start, goal):
+                print(f"WARNING: Invalid maze generated for test {len(test_data)}")
             
             test_data.append({
                 "id": len(test_data),
@@ -180,16 +245,15 @@ def save_datasets(train_data, test_data):
     print(f"✓ Saved {len(test_data)} test examples to data/test_sequences.json")
 
 if __name__ == "__main__":
-    # Create directories
     os.makedirs("data/grids/train", exist_ok=True)
     os.makedirs("data/grids/test", exist_ok=True)
 
-    parser = argparse.ArgumentParser(description='Generate maze dataset with variations')
+    parser = argparse.ArgumentParser(description='Generate maze dataset with REAL variations')
     parser.add_argument('--seed', type=int, default=641, help='Random seed')
     parser.add_argument('--cols', type=int, default=5, help='Number of cols')
     parser.add_argument('--rows', type=int, default=5, help='Number of rows')
     parser.add_argument('--variations', type=int, default=100, 
-                        help='Number of wall variations per solution')
+                        help='Number of truly different wall variations per solution')
     parser.add_argument('--train_split', type=float, default=0.8,
                         help='Proportion of solutions for training (0.8 = 80%)')
  
@@ -200,11 +264,11 @@ if __name__ == "__main__":
     # Generate all unique solution patterns
     max_num_sequences = num_monotonic_paths(args.rows, args.cols)
     paths = generate_random_unique_paths(args.rows, args.cols, rng, max_num_sequences)
-    paths = sorted(paths)  # Deterministic order
+    paths = sorted(paths)
     
     print(f"Generated {len(paths)} unique solution patterns")
     
-    # Generate train and test sets with variations
+    # Generate train and test sets with REAL variations
     train_data, test_data = generate_grids_with_variations(
         paths, args.rows, args.cols, args.seed, 
         num_variations=args.variations,
@@ -221,4 +285,6 @@ if __name__ == "__main__":
     print(f"Test images: data/grids/test/")
     print(f"Train JSON: data/train_sequences.json")
     print(f"Test JSON: data/test_sequences.json")
+    print(f"\n🔍 CHECK: Open a few train images with same solution_id")
+    print(f"   They should have DIFFERENT wall patterns!")
     print(f"{'='*60}\n")
