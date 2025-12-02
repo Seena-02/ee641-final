@@ -250,9 +250,9 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Generate maze dataset with REAL variations')
     parser.add_argument('--seed', type=int, default=641, help='Random seed')
-    parser.add_argument('--cols', type=int, default=5, help='Number of cols')
-    parser.add_argument('--rows', type=int, default=5, help='Number of rows')
-    parser.add_argument('--variations', type=int, default=100, 
+    parser.add_argument('--cols', type=int, default=7, help='Number of cols')
+    parser.add_argument('--rows', type=int, default=7, help='Number of rows')
+    parser.add_argument('--variations', type=int, default=50, 
                         help='Number of truly different wall variations per solution')
     parser.add_argument('--train_split', type=float, default=0.8,
                         help='Proportion of solutions for training (0.8 = 80%)')
