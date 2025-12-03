@@ -1,5 +1,5 @@
 {
-  "timestamp": "2025-12-03T00:44:31.874653",
+  "timestamp": "2025-12-03T09:35:19.196934",
   "grid_size": "7\u00d77",
   "model_config": {
     "hidden_size": 128,
@@ -7,7 +7,7 @@
     "num_attention_heads": 2,
     "num_prefix_tokens": 8,
     "dropout": 0.4,
-    "total_parameters": 11952320
+    "total_parameters": 12215488
   },
   "dataset": {
     "total_test_samples": 9250,
@@ -15,20 +15,20 @@
     "variations_per_solution": 50
   },
   "performance": {
-    "exact_match_pct": 6.551351351351351,
-    "valid_solution_pct": 26.17297297297297,
-    "creative_solution_pct": 19.62162162162162,
-    "invalid_solution_pct": 73.82702702702703
+    "exact_match_pct": 8.594594594594595,
+    "valid_solution_pct": 35.75135135135135,
+    "creative_solution_pct": 27.156756756756756,
+    "invalid_solution_pct": 64.24864864864864
   },
   "breakdown": {
-    "exact_matches": 606,
-    "creative_solutions": 1815,
-    "invalid_solutions": 6829
+    "exact_matches": 795,
+    "creative_solutions": 2512,
+    "invalid_solutions": 5943
   },
   "training": {
-    "final_loss": 0.3020828747259074,
-    "train_accuracy": 14.844384303112314,
-    "test_accuracy": 6.551351351351351,
-    "generalization_gap": 8.293032951760964
+    "final_loss": 0.26986778133359307,
+    "train_accuracy": 23.656292286874155,
+    "test_accuracy": 8.594594594594595,
+    "generalization_gap": 15.06169769227956
   }
 }
