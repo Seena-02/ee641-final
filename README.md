@@ -43,24 +43,35 @@ print(f"GPU: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'N
 ## Quickstart
 
 ```bash
-python3 generate_data.py
+python generate_data.py
 ```
 
 ## Dataset
 
-- **Grid sizes**: 5×5 (70 unique solutions) and 7×7 (924 unique solutions)
+- **Grid sizes**: 4x4 (20 unique solutions), 5×5 (70 unique solutions) and 7×7 (924 unique solutions)
 - **Actions**: R (Right) and U (Up) only
 - **Start**: Bottom-left corner → **Goal**: Top-right corner
-- **Sequence length**: ~8 tokens (5×5), ~12 tokens (7×7)
+- **Sequence length**: ~4 tokens (4x4), ~8 tokens (5×5), ~12 tokens (7×7)
 
 Example:
 
 ```json
-{
-  "id": 0,
-  "sequence": ["R", "R", "R", "R", "R", "R", "U", "U", "U", "U", "U", "U"],
-  "image": "data/grids/grid_0.png"
-}
+    {
+      "id": 0,
+      "sequence": [
+        "R",
+        "U",
+        "U",
+        "R",
+        "R",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/grids/test/grid_0.png",
+      "solution_id": 0,
+      "variation": 0
+    },
 ```
 
 ## Experimental Journey
@@ -85,13 +96,10 @@ Example:
 
 ### Testing History: The Path to Generalization
 
-| Test | Grid | Solutions | Model       | Train Images | Epochs | LR   | Train Acc | Test Acc (Exact) | Test Acc (Valid) | Gap   | Loss  |
-| ---- | ---- | --------- | ----------- | ------------ | ------ | ---- | --------- | ---------------- | ---------------- | ----- | ----- |
-| 1    | 5×5  | 70        | 768-dim, 6L | 5,600        | 50     | 5e-4 | ~100%     | 1.9%             | N/A              | ~98%  | 0.001 |
-| 2    | 5×5  | 70        | 256-dim, 2L | 5,600        | 50     | 5e-4 | ~100%     | 14.8%            | N/A              | ~85%  | 0.001 |
-| 3    | 5×5  | 70        | 128-dim, 2L | 5,600        | 50     | 5e-4 | 53.0%     | 9.6%             | N/A              | 43.4% | 0.214 |
-| 4    | 7×7  | 924       | 128-dim, 2L | 36,950       | 75     | 5e-4 | 100.0%    | 30.9%            | **86.5%**        | 13.5% | 0.002 |
-| 5    | 5×5  | 70        | 128-dim, 2L | 5,600        | 50     | 5e-4 | 54.2%     | 10.1%            | **86.5%**        | 13.5% | 0.198 |
+| Test | Grid | Train Images | Test Images | Model                 | Epochs | LR   | Train Acc | Test Acc (Exact) | Test Acc (Valid) | Gap   | Loss   | Status      |
+| ---- | ---- | ------------ | ----------- | --------------------- | ------ | ---- | --------- | ---------------- | ---------------- | ----- | ------ | ----------- |
+| 1    | 4×4  | 2,400        | 600         | 128-dim, 2L, 8 prefix | 40     | 5e-4 | 71.4%     | 7.3%             | **61.0%**        | 64.1% | 0.1721 | ⚠️ Moderate |
+| 2    | 5×5  | 5,600        | 1,400       | 128-dim, 2L, 8 prefix | 75     | 5e-4 | 71.3%     | 13.1%            | **70.1%**        | 58.2% | 0.1459 | ✅ Good     |
 
 **Note**: Tests 4 & 5 show the breakthrough discovery - while only 30-31% of predictions exactly match training solutions, **86.5% are valid solutions** that successfully navigate to the goal using different paths. This demonstrates true spatial reasoning rather than memorization. The performance is consistent across both 5×5 (Test 5) and 7×7 (Test 4) mazes, showing the model has learned generalizable maze-solving principles.
 
