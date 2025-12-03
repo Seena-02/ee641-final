@@ -96,10 +96,11 @@ Example:
 
 ### Testing History: The Path to Generalization
 
-| Test | Grid | Train Images | Test Images | Model                 | Epochs | LR   | Train Acc | Test Acc (Exact) | Test Acc (Valid) | Gap   | Loss   | Status      |
-| ---- | ---- | ------------ | ----------- | --------------------- | ------ | ---- | --------- | ---------------- | ---------------- | ----- | ------ | ----------- |
-| 1    | 4×4  | 2,400        | 600         | 128-dim, 2L, 8 prefix | 40     | 5e-4 | 71.4%     | 7.3%             | **61.0%**        | 64.1% | 0.1721 | ⚠️ Moderate |
-| 2    | 5×5  | 5,600        | 1,400       | 128-dim, 2L, 8 prefix | 75     | 5e-4 | 71.3%     | 13.1%            | **70.1%**        | 58.2% | 0.1459 | ✅ Good     |
+| Test | Grid | Train Images | Test Images | Model                 | Epochs | LR   | Train Acc | Test Acc (Exact) | Test Acc (Valid) | Gap  | Loss   | Status        |
+|------|------|--------------|-------------|-----------------------|--------|------|-----------|------------------|------------------|------|--------|---------------|
+| 1    | 4×4  | 2,400        | 600         | 128-dim, 2L, 8 prefix | 40     | 5e-4 | 71.4%     | 7.3%             | **61.0%**        | 64.1% | 0.1721 | ⚠️ Moderate   |
+| 2    | 5×5  | 5,600        | 1,400       | 128-dim, 2L, 8 prefix | 75     | 5e-4 | 71.3%     | 13.1%            | **70.1%**        | 58.2% | 0.1459 | ✅ Good       |
+| 3    | 7×7  | 36,950       | 9,250       | 128-dim, 2L, 8 prefix | 75     | 5e-4 | 14.8%     | 6.6%             | **26.2%**        | 8.3%  | 0.3021 | ❌ Needs Work |
 
 **Note**: Tests 4 & 5 show the breakthrough discovery - while only 30-31% of predictions exactly match training solutions, **86.5% are valid solutions** that successfully navigate to the goal using different paths. This demonstrates true spatial reasoning rather than memorization. The performance is consistent across both 5×5 (Test 5) and 7×7 (Test 4) mazes, showing the model has learned generalizable maze-solving principles.
 

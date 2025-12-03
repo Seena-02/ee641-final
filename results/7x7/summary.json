@@ -1,0 +1,34 @@
+{
+  "timestamp": "2025-12-03T00:44:31.874653",
+  "grid_size": "7\u00d77",
+  "model_config": {
+    "hidden_size": 128,
+    "num_layers": 2,
+    "num_attention_heads": 2,
+    "num_prefix_tokens": 8,
+    "dropout": 0.4,
+    "total_parameters": 11952320
+  },
+  "dataset": {
+    "total_test_samples": 9250,
+    "unique_solutions": "N/A",
+    "variations_per_solution": 50
+  },
+  "performance": {
+    "exact_match_pct": 6.551351351351351,
+    "valid_solution_pct": 26.17297297297297,
+    "creative_solution_pct": 19.62162162162162,
+    "invalid_solution_pct": 73.82702702702703
+  },
+  "breakdown": {
+    "exact_matches": 606,
+    "creative_solutions": 1815,
+    "invalid_solutions": 6829
+  },
+  "training": {
+    "final_loss": 0.3020828747259074,
+    "train_accuracy": 14.844384303112314,
+    "test_accuracy": 6.551351351351351,
+    "generalization_gap": 8.293032951760964
+  }
+}

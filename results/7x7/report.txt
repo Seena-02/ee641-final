@@ -1,0 +1,47 @@
+Maze Solver Results - 7×7 Grid
+======================================================================
+
+Generated: 2025-12-03 00:44:32
+
+Model Configuration:
+  Architecture: ResNet18 + GPT2 with Prefix-Tuning
+  Hidden size: 128-dim
+  Layers: 2
+  Attention heads: 2
+  Prefix tokens: 8
+  Total parameters: 11,952,320
+
+Dataset:
+  Test samples: 9250
+  Grid size: 7×7
+
+Performance Metrics:
+  Exact Match Accuracy:    6.6%
+  Valid Solution Rate:     26.2%
+  Creative Solutions:      19.6%
+  Invalid Solutions:       73.8%
+
+Breakdown:
+  Exact matches:        606 (6.6%)
+  Creative solutions:  1815 (19.6%)
+  Invalid solutions:   6829 (73.8%)
+
+
+Training Metrics:
+  Final loss: 0.3021
+  Train accuracy (exact): 14.8%
+  Test accuracy (exact): 6.6%
+  Generalization gap: 8.3%
+
+
+Failure Analysis:
+  Hit Wall: 6572
+  Out Of Bounds: 257
+
+======================================================================
+
+Interpretation:
+❌ NEEDS WORK: Model struggles with generalization
+   → May be overfitting or underfitting
+   → Consider architecture changes or more diverse data
+======================================================================
