@@ -1,5 +1,5 @@
 """
-ResNet + GPT2 Prefix-Tuning Model
+ResNet + GPT2 Prefix-Tuning Model - WITH ORIGINAL LOSS COMPUTATION
 Vision encoder (ResNet18) -> Prefix Generator -> LLM Decoder (GPT2)
 """
 
@@ -90,7 +90,7 @@ class ResNetGPT2PrefixModel(nn.Module):
     
     def forward(self, images, input_ids, labels=None):
         """
-        Forward pass with proper label handling for prefix-tuning.
+        Forward pass with ORIGINAL loss computation method.
         
         Args:
             images: (batch, 3, 224, 224) - Input images
@@ -105,28 +105,29 @@ class ResNetGPT2PrefixModel(nn.Module):
         inputs_embeds = torch.cat([prefix_embeds, token_embeds], dim=1)
         
         if labels is not None:
-            # Shift labels: Add -100 for prefix positions
-            prefix_labels = torch.full(
-                (labels.shape[0], self.num_prefix_tokens),
-                -100,
-                dtype=labels.dtype,
-                device=labels.device
-            )
-            shifted_labels = torch.cat([prefix_labels, labels], dim=1)
+            # Get outputs WITHOUT labels first
+            outputs = self.gpt2(inputs_embeds=inputs_embeds, return_dict=True)
             
-            outputs = self.gpt2(
-                inputs_embeds=inputs_embeds,
-                labels=shifted_labels
-            )
+            # Extract logits for NON-PREFIX positions only
+            # outputs.logits shape: [batch, prefix_len + seq_len, vocab]
+            # We want logits starting from position num_prefix_tokens
+            logits = outputs.logits[:, self.num_prefix_tokens:, :]  # [batch, seq_len, vocab]
+            
+            # Compute loss manually on these logits
+            loss_fct = nn.CrossEntropyLoss(ignore_index=-100)
+            loss = loss_fct(logits.reshape(-1, self.vocab_size), labels.reshape(-1))
+            
+            # Add loss to outputs
+            outputs.loss = loss
+            return outputs
         else:
-            outputs = self.gpt2(inputs_embeds=inputs_embeds)
-        
-        return outputs
+            return self.gpt2(inputs_embeds=inputs_embeds, return_dict=True)
     
     def generate(self, images, max_length=20, num_beams=1, 
                  pad_token_id=0, eos_token_id=2, bos_token_id=1):
         """
         Generate sequences from images using autoregressive decoding.
+        FIXED: Properly appends EOS token instead of replacing it with PAD.
         
         Args:
             images: (batch, 3, 224, 224) - Input images
@@ -165,14 +166,11 @@ class ResNetGPT2PrefixModel(nn.Module):
             next_token_logits = outputs.logits[:, -1, :]
             next_token = next_token_logits.argmax(dim=-1)
             
-            # Mark finished sequences
-            finished = finished | (next_token == eos_token_id)
-            
-            # Replace tokens in finished sequences with pad
-            next_token = torch.where(finished, torch.tensor(pad_token_id, device=device), next_token)
-            
-            # Append to generated sequence
+            # FIXED: Append token first (including EOS if generated)
             generated_ids = torch.cat([generated_ids, next_token.unsqueeze(1)], dim=1)
+            
+            # Mark finished sequences (after appending the token)
+            finished = finished | (next_token == eos_token_id)
             
             # Stop if all sequences are finished
             if finished.all():
