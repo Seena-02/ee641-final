@@ -233,16 +233,29 @@ def generate_grids_with_variations(paths, rows, cols, base_seed, num_variations=
     
     return train_data, test_data
 
-def save_datasets(train_data, test_data):
-    """Save train and test datasets to separate JSON files."""
+def save_datasets(train_data, test_data, metadata):
+    """Save train and test datasets to separate JSON files with metadata."""
+    
+    # Wrap entries with metadata
+    train_output = {
+        'metadata': metadata,
+        'entries': train_data
+    }
+    
+    test_output = {
+        'metadata': metadata,
+        'entries': test_data
+    }
+    
     with open("data/train_sequences.json", "w") as f:
-        json.dump(train_data, f, indent=4)
+        json.dump(train_output, f, indent=2)
     
     with open("data/test_sequences.json", "w") as f:
-        json.dump(test_data, f, indent=4)
+        json.dump(test_output, f, indent=2)
     
     print(f"\n✓ Saved {len(train_data)} train examples to data/train_sequences.json")
     print(f"✓ Saved {len(test_data)} test examples to data/test_sequences.json")
+    print(f"✓ Metadata included: {metadata}")
 
 if __name__ == "__main__":
     os.makedirs("data/grids/train", exist_ok=True)
@@ -250,33 +263,47 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Generate maze dataset with REAL variations')
     parser.add_argument('--seed', type=int, default=641, help='Random seed')
-    parser.add_argument('--cols', type=int, default=7, help='Number of cols')
-    parser.add_argument('--rows', type=int, default=7, help='Number of rows')
+    parser.add_argument('--size', type=int, default=7, help='Grid Size (rows and cols)')
     parser.add_argument('--variations', type=int, default=50, 
                         help='Number of truly different wall variations per solution')
     parser.add_argument('--train_split', type=float, default=0.8,
                         help='Proportion of solutions for training (0.8 = 80%)')
- 
+
     args = parser.parse_args()
 
     rng = random.Random(args.seed)
+    
+    # FIX: Both rows and cols should be equal to args.size
+    rows = cols = args.size
+
+    # Create metadata to save with the datasets
+    metadata = {
+        'grid_size': args.size,
+        'rows': rows,
+        'cols': cols,
+        'seed': args.seed,
+        'variations': args.variations,
+        'train_split': args.train_split,
+        'start_position': [0, rows - 1],  # Bottom-left (col, row)
+        'goal_position': [cols - 1, 0]    # Top-right (col, row)
+    }
 
     # Generate all unique solution patterns
-    max_num_sequences = num_monotonic_paths(args.rows, args.cols)
-    paths = generate_random_unique_paths(args.rows, args.cols, rng, max_num_sequences)
+    max_num_sequences = num_monotonic_paths(rows, cols)
+    paths = generate_random_unique_paths(rows, cols, rng, max_num_sequences)
     paths = sorted(paths)
     
     print(f"Generated {len(paths)} unique solution patterns")
     
     # Generate train and test sets with REAL variations
     train_data, test_data = generate_grids_with_variations(
-        paths, args.rows, args.cols, args.seed, 
+        paths, rows, cols, args.seed, 
         num_variations=args.variations,
         train_split=args.train_split
     )
     
-    # Save datasets
-    save_datasets(train_data, test_data)
+    # Save datasets with metadata
+    save_datasets(train_data, test_data, metadata)
     
     print(f"\n{'='*60}")
     print("✓ Dataset generation complete!")

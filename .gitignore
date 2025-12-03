@@ -9,6 +9,7 @@ maze-model-resnet/
 maze-model-unfrozen/
 resnet_gpt2_prefix.pth
 logs/
+models/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
