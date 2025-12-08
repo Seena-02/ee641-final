@@ -1,0 +1,324 @@
+\documentclass[11pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tcolorbox}
+\usepackage{array}
+\usepackage{multirow}
+
+% Page geometry
+\geometry{margin=1in}
+
+% Colors
+\definecolor{sectionblue}{RGB}{0, 83, 156}
+\definecolor{warningorange}{RGB}{255, 152, 0}
+\definecolor{successgreen}{RGB}{76, 175, 80}
+\definecolor{lightgray}{RGB}{245, 245, 245}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{sectionblue}}{\thesection}{1em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1em}{}
+
+% Header/Footer
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Model Card: ResNet-GPT2 Maze Solver}
+\lhead{Vision-to-Language Navigation}
+\rfoot{Page \thepage}
+
+% Custom boxes
+\newtcolorbox{infobox}[1][]{colback=lightgray,colframe=sectionblue,title=#1,fonttitle=\bfseries}
+\newtcolorbox{warningbox}{colback=warningorange!10,colframe=warningorange,title=\textbf{Limitations \& Risks}}
+\newtcolorbox{metricbox}{colback=successgreen!10,colframe=successgreen}
+
+\begin{document}
+
+% Title
+\begin{center}
+    {\Huge\bfseries\color{sectionblue} Model Card}\\[0.5cm]
+    {\LARGE ResNet18-GPT2 Vision-to-Language Maze Solver}\\[0.3cm]
+    {\large A Prefix-Tuning Approach for Visual Navigation Sequence Generation}\\[0.5cm]
+    \rule{\textwidth}{1pt}\\[0.3cm]
+    {\large Seena Mohajeran and Arshdeep Dhillon}
+\end{center}
+
+\vspace{0.5cm}
+
+%==============================================================================
+\section{Model Overview}
+%==============================================================================
+
+\begin{infobox}[Quick Reference]
+\begin{tabular}{@{}ll}
+\textbf{Model Type:} & Vision-to-Language (Image Captioning variant) \\
+\textbf{Architecture:} & ResNet18 encoder + GPT-2 decoder with prefix-tuning \\
+\textbf{Task:} & Generate navigation sequences from maze images \\
+\textbf{Input:} & RGB maze image (224$\times$224 pixels) \\
+\textbf{Output:} & Sequence of directional tokens (R, U) \\
+\textbf{Parameters:} & 12,215,488 total \\
+\end{tabular}
+\end{infobox}
+
+\subsection{Model Description}
+
+This model investigates whether visual spatial information can be effectively encoded into language model representations through prefix-tuning. The architecture combines a pretrained ResNet18 vision encoder with a small GPT-2 language decoder, connected via learned prefix embeddings that project visual features into the language model's embedding space.
+
+The model takes a maze image as input and autoregressively generates a sequence of navigation commands (Right ``R'' and Up ``U'') that traverse from the start position (bottom-left) to the goal position (top-right). This task requires the model to:
+\begin{enumerate}[noitemsep]
+    \item Extract spatial structure from the visual input
+    \item Encode wall positions and valid paths
+    \item Generate a coherent sequence respecting maze constraints
+\end{enumerate}
+
+\subsection{Intended Use}
+
+\textbf{Primary Use Cases:}
+\begin{itemize}[noitemsep]
+    \item Research into vision-to-language information transfer
+    \item Investigating prefix-tuning as a cross-modal bridging mechanism
+    \item Educational demonstration of multimodal architectures
+    \item Baseline for visual navigation tasks
+\end{itemize}
+
+\textbf{Out-of-Scope Uses:}
+\begin{itemize}[noitemsep]
+    \item Real-world robot navigation
+    \item Safety-critical pathfinding applications
+    \item General-purpose image captioning
+    \item Mazes with different start/goal configurations
+\end{itemize}
+
+%==============================================================================
+\section{Architecture Details}
+%==============================================================================
+
+\subsection{Model Architecture}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Component} & \textbf{Specification} & \textbf{Details} \\
+\midrule
+\multirow{3}{*}{Vision Encoder} & Base Model & ResNet18 (ImageNet pretrained) \\
+& Output Dimension & 512 \\
+& Training Status & Frozen \\
+\midrule
+\multirow{2}{*}{Feature Projection} & Architecture & Linear(512 $\rightarrow$ 128) \\
+& Activation & None \\
+\midrule
+\multirow{3}{*}{Prefix Generator} & Layer 1 & Linear(128 $\rightarrow$ 256) + Tanh \\
+& Layer 2 & Linear(256 $\rightarrow$ 16 $\times$ 128) \\
+& Output Shape & [batch, 16, 128] \\
+\midrule
+\multirow{5}{*}{GPT-2 Decoder} & Hidden Size & 128 \\
+& Layers & 2 \\
+& Attention Heads & 2 \\
+& Max Positions & 128 \\
+& Dropout & 0.4 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Tokenizer}
+
+\begin{center}
+\begin{tabular}{cl}
+\toprule
+\textbf{Token ID} & \textbf{Token} \\
+\midrule
+0 & \texttt{<pad>} (Padding) \\
+1 & \texttt{<s>} (Beginning of Sequence) \\
+2 & \texttt{</s>} (End of Sequence) \\
+3 & \texttt{<unk>} (Unknown) \\
+4 & \texttt{R} (Move Right) \\
+5 & \texttt{U} (Move Up) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Vocabulary Size:} 6 tokens
+
+%==============================================================================
+\section{Training Details}
+%==============================================================================
+
+\subsection{Training Data}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Parameter} & \textbf{Value} \\
+\midrule
+Grid Size & 7$\times$7 \\
+Training Samples & 36,950 \\
+Test Samples & 9,250 \\
+Variations per Solution & 50 \\
+Start Position & (0, 6) --- Bottom-left \\
+Goal Position & (6, 0) --- Top-right \\
+Random Seed & 69 \\
+Image Resolution & 224$\times$224 RGB \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The dataset consists of procedurally generated maze images with corresponding solution paths. Each unique maze solution is augmented with 50 visual variations to improve generalization. Mazes use a binary representation where white cells indicate valid paths and black cells indicate walls.
+
+\subsection{Training Configuration}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Hyperparameter} & \textbf{Value} \\
+\midrule
+Epochs & 100 \\
+Batch Size & 32 \\
+Base Learning Rate & $5 \times 10^{-4}$ \\
+Optimizer & AdamW \\
+Weight Decay & 0.01 \\
+LR Schedule & Cosine Annealing \\
+Minimum LR & $1 \times 10^{-6}$ \\
+Gradient Clipping & Max norm 1.0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Differentiated Learning Rates:}
+\begin{itemize}[noitemsep]
+    \item ResNet features: $\text{lr} / 10$ (frozen, effectively 0)
+    \item Feature projection: $\text{lr}$
+    \item Prefix generator: $\text{lr}$
+    \item GPT-2 decoder: $\text{lr} / 5$
+\end{itemize}
+
+\subsection{Image Preprocessing}
+
+\begin{enumerate}[noitemsep]
+    \item Resize to 224$\times$224 pixels
+    \item Convert to tensor (scale to [0, 1])
+    \item Normalize with ImageNet statistics:
+    \begin{itemize}[noitemsep]
+        \item Mean: [0.485, 0.456, 0.406]
+        \item Std: [0.229, 0.224, 0.225]
+    \end{itemize}
+\end{enumerate}
+
+%==============================================================================
+\section{Limitations}
+%==============================================================================
+
+\begin{warningbox}
+\begin{enumerate}[noitemsep]
+    \item \textbf{Grid Size Constraint:} Trained exclusively on 7$\times$7 grids; performance on other sizes is untested and likely poor.
+    
+    \item \textbf{Fixed Start/Goal:} Only supports bottom-left to top-right navigation; cannot handle arbitrary start/goal positions.
+    
+    \item \textbf{Limited Action Space:} Only Right (R) and Up (U) moves; cannot handle mazes requiring Left or Down movements.
+    
+    \item \textbf{Capacity Bottleneck:} The 128-dimensional hidden size and 16 prefix tokens may be insufficient for encoding complex maze structures. Prior experiments on smaller grids suggest this is a key limiting factor.
+    
+    \item \textbf{Wall Collision Errors:} The majority of failures (99.3\%) involve hitting walls, indicating imprecise spatial encoding.
+    
+    \item \textbf{No Uncertainty Quantification:} Model provides no confidence scores or indication of prediction reliability.
+    
+    \item \textbf{Single Solution Generation:} Cannot generate multiple alternative paths or rank solutions.
+\end{enumerate}
+\end{warningbox}
+
+%==============================================================================
+\section{Technical Specifications}
+%==============================================================================
+
+\subsection{Compute Infrastructure}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Component} & \textbf{Specification} \\
+\midrule
+Hardware & CUDA-compatible GPU \\
+Framework & PyTorch \\
+Vision Backbone & torchvision (ResNet18) \\
+Language Model & Hugging Face Transformers (GPT2LMHeadModel) \\
+Python Version & 3.12 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Model Files}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{File} & \textbf{Description} \\
+\midrule
+\texttt{model.py} & Model architecture definition \\
+\texttt{tokenizer.py} & Sequence tokenizer \\
+\texttt{dataset.py} & Dataset and DataLoader utilities \\
+\texttt{train\_utils.py} & Training loop and evaluation \\
+\texttt{solution\_validator.py} & Path validation logic \\
+\texttt{data\_utils.py} & Data loading utilities \\
+\texttt{resnet\_gpt2\_prefix.pth} & Trained model checkpoint \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Inference Example}
+
+\begin{verbatim}
+from model import ResNetGPT2PrefixModel
+from tokenizer import SimpleTokenizer
+
+# Load model
+model = ResNetGPT2PrefixModel(
+    vocab_size=6,
+    hidden_size=128,
+    num_layers=2,
+    num_attention_heads=2,
+    num_prefix_tokens=16
+)
+model.load_state_dict(checkpoint['model_state_dict'])
+
+# Generate solution
+output = model.generate(
+    images,           # [batch, 3, 224, 224]
+    max_length=20,
+    bos_token_id=1,
+    eos_token_id=2,
+    pad_token_id=0
+)
+\end{verbatim}
+
+%==============================================================================
+\section{Citation}
+%==============================================================================
+
+If you use this model or methodology in your research, please cite:
+
+\begin{verbatim}
+@misc{resnet_gpt2_maze_solver,
+  title={ResNet-GPT2 Vision-to-Language Maze Solver: 
+         A Prefix-Tuning Approach},
+  author={[Author Name]},
+  year={2025},
+  note={Model Card v1.0}
+}
+\end{verbatim}
+
+\vspace{1cm}
+\begin{center}
+\rule{0.5\textwidth}{0.5pt}\\[0.3cm]
+{\small\textit{This model card follows the format proposed by Mitchell et al. (2019) ``Model Cards for Model Reporting''}}
+\end{center}
+
+\end{document}
