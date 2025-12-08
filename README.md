@@ -473,7 +473,7 @@ This reveals the model learned **spatial reasoning**, not just memorization!
 
 - ✅ 4×4 grids: 61.0% valid rate (moderate performance)
 - ✅ 5×5 grids: 70.1% valid rate (good performance)
-- ❌ 7×7 grids: 26.2% valid rate (underfitting - model too small)
+- ❌ 7×7 grids: 35.8% valid rate (underfitting - model too small)
 
 **Key Findings**:
 
