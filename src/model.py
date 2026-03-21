@@ -140,7 +140,6 @@ class ResNetGPT2PrefixModel(nn.Module):
         Returns:
             generated_ids: (batch, seq_len) - Generated token IDs
         """
-        self.eval()
         batch_size = images.shape[0]
         device = images.device
         

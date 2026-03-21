@@ -1,9 +1,21 @@
+"""
+Generate synthetic maze datasets for training and evaluating the maze solver model.
+
+Each maze image has a unique wall configuration with a single guaranteed solution path.
+Generates train/test splits with multiple visual variations per solution.
+
+Usage:
+    python generate_dataset.py --size 5 --variations 100 --seed 42
+"""
+
 import random
 import math
 import os
 import json
 import argparse
+from collections import defaultdict
 from PIL import Image, ImageDraw, ImageFont
+
 
 def generate_grid_from_path(path, rows, cols, save_path, seed=None, cell_size=80):
     """
@@ -84,7 +96,7 @@ def generate_grid_from_path(path, rows, cols, save_path, seed=None, cell_size=80
 
     try:
         font = ImageFont.truetype("arial.ttf", int(cell_size / 2))
-    except:
+    except OSError:
         font = ImageFont.load_default()
     
     # Draw grid
@@ -111,6 +123,7 @@ def generate_grid_from_path(path, rows, cols, save_path, seed=None, cell_size=80
     img.save(save_path)
     return grid
 
+
 def verify_path_validity(grid, path, start, goal):
     """
     Verify that the given path is valid in the grid.
@@ -133,6 +146,7 @@ def verify_path_validity(grid, path, start, goal):
     
     return (r, c) == goal
 
+
 def generate_random_unique_paths(rows, cols, rng, num_sequences=50):
     """Generate unique random monotonic (U/R only) paths."""
     up_moves = rows - 1
@@ -148,8 +162,10 @@ def generate_random_unique_paths(rows, cols, rng, num_sequences=50):
 
     return [list(p) for p in paths]
 
+
 def num_monotonic_paths(rows, cols):
     return math.comb(rows + cols - 2, rows - 1)
+
 
 def generate_grids_with_variations(paths, rows, cols, base_seed, num_variations=5, train_split=0.8):
     """
@@ -233,6 +249,59 @@ def generate_grids_with_variations(paths, rows, cols, base_seed, num_variations=
     
     return train_data, test_data
 
+
+def check_duplicates(train_data, test_data):
+    """
+    Check for visually identical images across the generated dataset using perceptual hashing.
+    Reports duplicate count broken down by same-split and cross-split pairs.
+
+    Requires imagehash: pip install imagehash
+    """
+    try:
+        import imagehash
+    except ImportError:
+        print("Warning: imagehash not installed, skipping duplicate check (pip install imagehash)")
+        return
+
+    hash_to_entries = defaultdict(list)
+
+    for entry in train_data:
+        img_hash = imagehash.phash(Image.open(entry['image']))
+        hash_to_entries[str(img_hash)].append(('train', entry['id'], entry['image']))
+
+    for entry in test_data:
+        img_hash = imagehash.phash(Image.open(entry['image']))
+        hash_to_entries[str(img_hash)].append(('test', entry['id'], entry['image']))
+
+    duplicate_groups = [entries for entries in hash_to_entries.values() if len(entries) > 1]
+
+    total = len(train_data) + len(test_data)
+    cross_split = sum(
+        1 for group in duplicate_groups
+        if len({split for split, _, _ in group}) > 1
+    )
+    same_split = len(duplicate_groups) - cross_split
+
+    print(f"\n{'='*60}")
+    print("DUPLICATE CHECK")
+    print(f"{'='*60}")
+    print(f"Total images scanned:   {total}")
+    print(f"Duplicate groups found: {len(duplicate_groups)}")
+    print(f"  Same-split pairs:     {same_split}")
+    print(f"  Cross-split pairs:    {cross_split}  <- train/test leakage")
+
+    if cross_split > 0:
+        print("\nCross-split duplicates (train/test leakage):")
+        for group in duplicate_groups:
+            splits = {split for split, _, _ in group}
+            if len(splits) > 1:
+                for split, eid, path in group:
+                    print(f"  [{split}] id={eid}  {path}")
+    elif len(duplicate_groups) == 0:
+        print("No duplicates found.")
+    print(f"{'='*60}\n")
+
+
 def save_datasets(train_data, test_data, metadata):
     """Save train and test datasets to separate JSON files with metadata."""
     
@@ -273,7 +342,6 @@ if __name__ == "__main__":
 
     rng = random.Random(args.seed)
     
-    # FIX: Both rows and cols should be equal to args.size
     rows = cols = args.size
 
     # Create metadata to save with the datasets
@@ -304,14 +372,13 @@ if __name__ == "__main__":
     
     # Save datasets with metadata
     save_datasets(train_data, test_data, metadata)
-    
+    check_duplicates(train_data, test_data)
+
     print(f"\n{'='*60}")
-    print("✓ Dataset generation complete!")
+    print("Dataset generation complete!")
     print(f"{'='*60}")
     print(f"Train images: data/grids/train/")
-    print(f"Test images: data/grids/test/")
-    print(f"Train JSON: data/train_sequences.json")
-    print(f"Test JSON: data/test_sequences.json")
-    print(f"\n🔍 CHECK: Open a few train images with same solution_id")
-    print(f"   They should have DIFFERENT wall patterns!")
+    print(f"Test images:  data/grids/test/")
+    print(f"Train JSON:   data/train_sequences.json")
+    print(f"Test JSON:    data/test_sequences.json")
     print(f"{'='*60}\n")

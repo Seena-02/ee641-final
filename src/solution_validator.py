@@ -5,8 +5,9 @@ Checks if LLM-generated solutions are valid, not just exact matches
 
 import torch
 
+
 def validate_solution(maze_grid, sequence, start_pos=None, goal_pos=None):
-    """S
+    """
     Check if a sequence of moves reaches the goal from start position.
     
     Args:
@@ -38,8 +39,6 @@ def validate_solution(maze_grid, sequence, start_pos=None, goal_pos=None):
     move_map = {
         'R': (1, 0),   # Right: +1 col
         'U': (0, -1),  # Up: -1 row
-        'L': (-1, 0),  # Left: -1 col (if you add it later)
-        'D': (0, 1),   # Down: +1 row (if you add it later)
     }
     
     result = {
@@ -230,39 +229,3 @@ def print_evaluation_results(results, dataset_name="Test"):
                     print(f"  Failure: {reason} at position {val['final_position']}")
         
         print("-" * 70)
-
-
-# Example usage in your training script:
-"""
-# After training, evaluate with validation:
-
-# Load maze grids into a dict
-maze_grids = {}
-for entry in test_entries:
-    maze_id = entry['id']
-    img_path = entry['image']
-    # Load and convert image to grid (0=path, 1=wall)
-    maze_grids[maze_id] = load_maze_grid(img_path)
-
-# Evaluate
-test_results = evaluate_with_validation(
-    model, 
-    test_loader, 
-    device, 
-    tokenizer, 
-    maze_grids=maze_grids
-)
-
-print_evaluation_results(test_results, dataset_name="Test")
-
-# Do the same for training set
-train_results = evaluate_with_validation(
-    model, 
-    train_loader, 
-    device, 
-    tokenizer, 
-    maze_grids=train_maze_grids
-)
-
-print_evaluation_results(train_results, dataset_name="Training")
-"""

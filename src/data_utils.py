@@ -42,7 +42,7 @@ def load_maze_dataset(json_path, return_metadata=True):
             'start_position': [0, 6],
             'goal_position': [6, 0]
         }
-        print(f"⚠️  No metadata found in {json_path}, using defaults")
+        print(f"Warning: no metadata found in {json_path}, using defaults")
     
     if return_metadata:
         return entries, metadata
