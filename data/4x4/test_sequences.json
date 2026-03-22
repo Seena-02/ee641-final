@@ -1,0 +1,8420 @@
+{
+  "metadata": {
+    "grid_size": 4,
+    "rows": 4,
+    "cols": 4,
+    "seed": 69,
+    "variations": 150,
+    "train_split": 0.8,
+    "start_position": [
+      0,
+      3
+    ],
+    "goal_position": [
+      3,
+      0
+    ]
+  },
+  "entries": [
+    {
+      "id": 0,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_0.png",
+      "solution_id": 0,
+      "variation": 0
+    },
+    {
+      "id": 1,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_1.png",
+      "solution_id": 0,
+      "variation": 1
+    },
+    {
+      "id": 2,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_2.png",
+      "solution_id": 0,
+      "variation": 2
+    },
+    {
+      "id": 3,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_3.png",
+      "solution_id": 0,
+      "variation": 3
+    },
+    {
+      "id": 4,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_4.png",
+      "solution_id": 0,
+      "variation": 4
+    },
+    {
+      "id": 5,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_5.png",
+      "solution_id": 0,
+      "variation": 5
+    },
+    {
+      "id": 6,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_6.png",
+      "solution_id": 0,
+      "variation": 6
+    },
+    {
+      "id": 7,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_7.png",
+      "solution_id": 0,
+      "variation": 7
+    },
+    {
+      "id": 8,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_8.png",
+      "solution_id": 0,
+      "variation": 8
+    },
+    {
+      "id": 9,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_9.png",
+      "solution_id": 0,
+      "variation": 9
+    },
+    {
+      "id": 10,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_10.png",
+      "solution_id": 0,
+      "variation": 10
+    },
+    {
+      "id": 11,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_11.png",
+      "solution_id": 0,
+      "variation": 11
+    },
+    {
+      "id": 12,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_12.png",
+      "solution_id": 0,
+      "variation": 12
+    },
+    {
+      "id": 13,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_13.png",
+      "solution_id": 0,
+      "variation": 13
+    },
+    {
+      "id": 14,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_14.png",
+      "solution_id": 0,
+      "variation": 14
+    },
+    {
+      "id": 15,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_15.png",
+      "solution_id": 0,
+      "variation": 15
+    },
+    {
+      "id": 16,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_16.png",
+      "solution_id": 0,
+      "variation": 16
+    },
+    {
+      "id": 17,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_17.png",
+      "solution_id": 0,
+      "variation": 17
+    },
+    {
+      "id": 18,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_18.png",
+      "solution_id": 0,
+      "variation": 18
+    },
+    {
+      "id": 19,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_19.png",
+      "solution_id": 0,
+      "variation": 19
+    },
+    {
+      "id": 20,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_20.png",
+      "solution_id": 0,
+      "variation": 20
+    },
+    {
+      "id": 21,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_21.png",
+      "solution_id": 0,
+      "variation": 21
+    },
+    {
+      "id": 22,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_22.png",
+      "solution_id": 0,
+      "variation": 22
+    },
+    {
+      "id": 23,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_23.png",
+      "solution_id": 0,
+      "variation": 23
+    },
+    {
+      "id": 24,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_24.png",
+      "solution_id": 0,
+      "variation": 24
+    },
+    {
+      "id": 25,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_25.png",
+      "solution_id": 0,
+      "variation": 25
+    },
+    {
+      "id": 26,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_26.png",
+      "solution_id": 0,
+      "variation": 26
+    },
+    {
+      "id": 27,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_27.png",
+      "solution_id": 0,
+      "variation": 27
+    },
+    {
+      "id": 28,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_28.png",
+      "solution_id": 0,
+      "variation": 28
+    },
+    {
+      "id": 29,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_29.png",
+      "solution_id": 0,
+      "variation": 29
+    },
+    {
+      "id": 30,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_30.png",
+      "solution_id": 0,
+      "variation": 30
+    },
+    {
+      "id": 31,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_31.png",
+      "solution_id": 0,
+      "variation": 31
+    },
+    {
+      "id": 32,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_32.png",
+      "solution_id": 0,
+      "variation": 32
+    },
+    {
+      "id": 33,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_33.png",
+      "solution_id": 0,
+      "variation": 33
+    },
+    {
+      "id": 34,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_34.png",
+      "solution_id": 0,
+      "variation": 34
+    },
+    {
+      "id": 35,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_35.png",
+      "solution_id": 0,
+      "variation": 35
+    },
+    {
+      "id": 36,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_36.png",
+      "solution_id": 0,
+      "variation": 36
+    },
+    {
+      "id": 37,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_37.png",
+      "solution_id": 0,
+      "variation": 37
+    },
+    {
+      "id": 38,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_38.png",
+      "solution_id": 0,
+      "variation": 38
+    },
+    {
+      "id": 39,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_39.png",
+      "solution_id": 0,
+      "variation": 39
+    },
+    {
+      "id": 40,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_40.png",
+      "solution_id": 0,
+      "variation": 40
+    },
+    {
+      "id": 41,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_41.png",
+      "solution_id": 0,
+      "variation": 41
+    },
+    {
+      "id": 42,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_42.png",
+      "solution_id": 0,
+      "variation": 42
+    },
+    {
+      "id": 43,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_43.png",
+      "solution_id": 0,
+      "variation": 43
+    },
+    {
+      "id": 44,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_44.png",
+      "solution_id": 0,
+      "variation": 44
+    },
+    {
+      "id": 45,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_45.png",
+      "solution_id": 0,
+      "variation": 45
+    },
+    {
+      "id": 46,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_46.png",
+      "solution_id": 0,
+      "variation": 46
+    },
+    {
+      "id": 47,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_47.png",
+      "solution_id": 0,
+      "variation": 47
+    },
+    {
+      "id": 48,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_48.png",
+      "solution_id": 0,
+      "variation": 48
+    },
+    {
+      "id": 49,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_49.png",
+      "solution_id": 0,
+      "variation": 49
+    },
+    {
+      "id": 50,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_50.png",
+      "solution_id": 0,
+      "variation": 50
+    },
+    {
+      "id": 51,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_51.png",
+      "solution_id": 0,
+      "variation": 51
+    },
+    {
+      "id": 52,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_52.png",
+      "solution_id": 0,
+      "variation": 52
+    },
+    {
+      "id": 53,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_53.png",
+      "solution_id": 0,
+      "variation": 53
+    },
+    {
+      "id": 54,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_54.png",
+      "solution_id": 0,
+      "variation": 54
+    },
+    {
+      "id": 55,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_55.png",
+      "solution_id": 0,
+      "variation": 55
+    },
+    {
+      "id": 56,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_56.png",
+      "solution_id": 0,
+      "variation": 56
+    },
+    {
+      "id": 57,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_57.png",
+      "solution_id": 0,
+      "variation": 57
+    },
+    {
+      "id": 58,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_58.png",
+      "solution_id": 0,
+      "variation": 58
+    },
+    {
+      "id": 59,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_59.png",
+      "solution_id": 0,
+      "variation": 59
+    },
+    {
+      "id": 60,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_60.png",
+      "solution_id": 0,
+      "variation": 60
+    },
+    {
+      "id": 61,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_61.png",
+      "solution_id": 0,
+      "variation": 61
+    },
+    {
+      "id": 62,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_62.png",
+      "solution_id": 0,
+      "variation": 62
+    },
+    {
+      "id": 63,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_63.png",
+      "solution_id": 0,
+      "variation": 63
+    },
+    {
+      "id": 64,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_64.png",
+      "solution_id": 0,
+      "variation": 64
+    },
+    {
+      "id": 65,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_65.png",
+      "solution_id": 0,
+      "variation": 65
+    },
+    {
+      "id": 66,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_66.png",
+      "solution_id": 0,
+      "variation": 66
+    },
+    {
+      "id": 67,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_67.png",
+      "solution_id": 0,
+      "variation": 67
+    },
+    {
+      "id": 68,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_68.png",
+      "solution_id": 0,
+      "variation": 68
+    },
+    {
+      "id": 69,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_69.png",
+      "solution_id": 0,
+      "variation": 69
+    },
+    {
+      "id": 70,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_70.png",
+      "solution_id": 0,
+      "variation": 70
+    },
+    {
+      "id": 71,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_71.png",
+      "solution_id": 0,
+      "variation": 71
+    },
+    {
+      "id": 72,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_72.png",
+      "solution_id": 0,
+      "variation": 72
+    },
+    {
+      "id": 73,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_73.png",
+      "solution_id": 0,
+      "variation": 73
+    },
+    {
+      "id": 74,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_74.png",
+      "solution_id": 0,
+      "variation": 74
+    },
+    {
+      "id": 75,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_75.png",
+      "solution_id": 0,
+      "variation": 75
+    },
+    {
+      "id": 76,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_76.png",
+      "solution_id": 0,
+      "variation": 76
+    },
+    {
+      "id": 77,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_77.png",
+      "solution_id": 0,
+      "variation": 77
+    },
+    {
+      "id": 78,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_78.png",
+      "solution_id": 0,
+      "variation": 78
+    },
+    {
+      "id": 79,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_79.png",
+      "solution_id": 0,
+      "variation": 79
+    },
+    {
+      "id": 80,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_80.png",
+      "solution_id": 0,
+      "variation": 80
+    },
+    {
+      "id": 81,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_81.png",
+      "solution_id": 0,
+      "variation": 81
+    },
+    {
+      "id": 82,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_82.png",
+      "solution_id": 0,
+      "variation": 82
+    },
+    {
+      "id": 83,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_83.png",
+      "solution_id": 0,
+      "variation": 83
+    },
+    {
+      "id": 84,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_84.png",
+      "solution_id": 0,
+      "variation": 84
+    },
+    {
+      "id": 85,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_85.png",
+      "solution_id": 0,
+      "variation": 85
+    },
+    {
+      "id": 86,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_86.png",
+      "solution_id": 0,
+      "variation": 86
+    },
+    {
+      "id": 87,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_87.png",
+      "solution_id": 0,
+      "variation": 87
+    },
+    {
+      "id": 88,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_88.png",
+      "solution_id": 0,
+      "variation": 88
+    },
+    {
+      "id": 89,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_89.png",
+      "solution_id": 0,
+      "variation": 89
+    },
+    {
+      "id": 90,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_90.png",
+      "solution_id": 0,
+      "variation": 90
+    },
+    {
+      "id": 91,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_91.png",
+      "solution_id": 0,
+      "variation": 91
+    },
+    {
+      "id": 92,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_92.png",
+      "solution_id": 0,
+      "variation": 92
+    },
+    {
+      "id": 93,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_93.png",
+      "solution_id": 0,
+      "variation": 93
+    },
+    {
+      "id": 94,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_94.png",
+      "solution_id": 0,
+      "variation": 94
+    },
+    {
+      "id": 95,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_95.png",
+      "solution_id": 0,
+      "variation": 95
+    },
+    {
+      "id": 96,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_96.png",
+      "solution_id": 0,
+      "variation": 96
+    },
+    {
+      "id": 97,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_97.png",
+      "solution_id": 0,
+      "variation": 97
+    },
+    {
+      "id": 98,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_98.png",
+      "solution_id": 0,
+      "variation": 98
+    },
+    {
+      "id": 99,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_99.png",
+      "solution_id": 0,
+      "variation": 99
+    },
+    {
+      "id": 100,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_100.png",
+      "solution_id": 0,
+      "variation": 100
+    },
+    {
+      "id": 101,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_101.png",
+      "solution_id": 0,
+      "variation": 101
+    },
+    {
+      "id": 102,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_102.png",
+      "solution_id": 0,
+      "variation": 102
+    },
+    {
+      "id": 103,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_103.png",
+      "solution_id": 0,
+      "variation": 103
+    },
+    {
+      "id": 104,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_104.png",
+      "solution_id": 0,
+      "variation": 104
+    },
+    {
+      "id": 105,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_105.png",
+      "solution_id": 0,
+      "variation": 105
+    },
+    {
+      "id": 106,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_106.png",
+      "solution_id": 0,
+      "variation": 106
+    },
+    {
+      "id": 107,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_107.png",
+      "solution_id": 0,
+      "variation": 107
+    },
+    {
+      "id": 108,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_108.png",
+      "solution_id": 0,
+      "variation": 108
+    },
+    {
+      "id": 109,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_109.png",
+      "solution_id": 0,
+      "variation": 109
+    },
+    {
+      "id": 110,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_110.png",
+      "solution_id": 0,
+      "variation": 110
+    },
+    {
+      "id": 111,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_111.png",
+      "solution_id": 0,
+      "variation": 111
+    },
+    {
+      "id": 112,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_112.png",
+      "solution_id": 0,
+      "variation": 112
+    },
+    {
+      "id": 113,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_113.png",
+      "solution_id": 0,
+      "variation": 113
+    },
+    {
+      "id": 114,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_114.png",
+      "solution_id": 0,
+      "variation": 114
+    },
+    {
+      "id": 115,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_115.png",
+      "solution_id": 0,
+      "variation": 115
+    },
+    {
+      "id": 116,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_116.png",
+      "solution_id": 0,
+      "variation": 116
+    },
+    {
+      "id": 117,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_117.png",
+      "solution_id": 0,
+      "variation": 117
+    },
+    {
+      "id": 118,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_118.png",
+      "solution_id": 0,
+      "variation": 118
+    },
+    {
+      "id": 119,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_119.png",
+      "solution_id": 0,
+      "variation": 119
+    },
+    {
+      "id": 120,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_120.png",
+      "solution_id": 0,
+      "variation": 120
+    },
+    {
+      "id": 121,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_121.png",
+      "solution_id": 0,
+      "variation": 121
+    },
+    {
+      "id": 122,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_122.png",
+      "solution_id": 0,
+      "variation": 122
+    },
+    {
+      "id": 123,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_123.png",
+      "solution_id": 0,
+      "variation": 123
+    },
+    {
+      "id": 124,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_124.png",
+      "solution_id": 0,
+      "variation": 124
+    },
+    {
+      "id": 125,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_125.png",
+      "solution_id": 0,
+      "variation": 125
+    },
+    {
+      "id": 126,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_126.png",
+      "solution_id": 0,
+      "variation": 126
+    },
+    {
+      "id": 127,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_127.png",
+      "solution_id": 0,
+      "variation": 127
+    },
+    {
+      "id": 128,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_128.png",
+      "solution_id": 0,
+      "variation": 128
+    },
+    {
+      "id": 129,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_129.png",
+      "solution_id": 0,
+      "variation": 129
+    },
+    {
+      "id": 130,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_130.png",
+      "solution_id": 0,
+      "variation": 130
+    },
+    {
+      "id": 131,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_131.png",
+      "solution_id": 0,
+      "variation": 131
+    },
+    {
+      "id": 132,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_132.png",
+      "solution_id": 0,
+      "variation": 132
+    },
+    {
+      "id": 133,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_133.png",
+      "solution_id": 0,
+      "variation": 133
+    },
+    {
+      "id": 134,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_134.png",
+      "solution_id": 0,
+      "variation": 134
+    },
+    {
+      "id": 135,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_135.png",
+      "solution_id": 0,
+      "variation": 135
+    },
+    {
+      "id": 136,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_136.png",
+      "solution_id": 0,
+      "variation": 136
+    },
+    {
+      "id": 137,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_137.png",
+      "solution_id": 0,
+      "variation": 137
+    },
+    {
+      "id": 138,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_138.png",
+      "solution_id": 0,
+      "variation": 138
+    },
+    {
+      "id": 139,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_139.png",
+      "solution_id": 0,
+      "variation": 139
+    },
+    {
+      "id": 140,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_140.png",
+      "solution_id": 0,
+      "variation": 140
+    },
+    {
+      "id": 141,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_141.png",
+      "solution_id": 0,
+      "variation": 141
+    },
+    {
+      "id": 142,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_142.png",
+      "solution_id": 0,
+      "variation": 142
+    },
+    {
+      "id": 143,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_143.png",
+      "solution_id": 0,
+      "variation": 143
+    },
+    {
+      "id": 144,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_144.png",
+      "solution_id": 0,
+      "variation": 144
+    },
+    {
+      "id": 145,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_145.png",
+      "solution_id": 0,
+      "variation": 145
+    },
+    {
+      "id": 146,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_146.png",
+      "solution_id": 0,
+      "variation": 146
+    },
+    {
+      "id": 147,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_147.png",
+      "solution_id": 0,
+      "variation": 147
+    },
+    {
+      "id": 148,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_148.png",
+      "solution_id": 0,
+      "variation": 148
+    },
+    {
+      "id": 149,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_149.png",
+      "solution_id": 0,
+      "variation": 149
+    },
+    {
+      "id": 150,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_150.png",
+      "solution_id": 1,
+      "variation": 0
+    },
+    {
+      "id": 151,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_151.png",
+      "solution_id": 1,
+      "variation": 1
+    },
+    {
+      "id": 152,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_152.png",
+      "solution_id": 1,
+      "variation": 2
+    },
+    {
+      "id": 153,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_153.png",
+      "solution_id": 1,
+      "variation": 3
+    },
+    {
+      "id": 154,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_154.png",
+      "solution_id": 1,
+      "variation": 4
+    },
+    {
+      "id": 155,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_155.png",
+      "solution_id": 1,
+      "variation": 5
+    },
+    {
+      "id": 156,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_156.png",
+      "solution_id": 1,
+      "variation": 6
+    },
+    {
+      "id": 157,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_157.png",
+      "solution_id": 1,
+      "variation": 7
+    },
+    {
+      "id": 158,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_158.png",
+      "solution_id": 1,
+      "variation": 8
+    },
+    {
+      "id": 159,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_159.png",
+      "solution_id": 1,
+      "variation": 9
+    },
+    {
+      "id": 160,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_160.png",
+      "solution_id": 1,
+      "variation": 10
+    },
+    {
+      "id": 161,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_161.png",
+      "solution_id": 1,
+      "variation": 11
+    },
+    {
+      "id": 162,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_162.png",
+      "solution_id": 1,
+      "variation": 12
+    },
+    {
+      "id": 163,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_163.png",
+      "solution_id": 1,
+      "variation": 13
+    },
+    {
+      "id": 164,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_164.png",
+      "solution_id": 1,
+      "variation": 14
+    },
+    {
+      "id": 165,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_165.png",
+      "solution_id": 1,
+      "variation": 15
+    },
+    {
+      "id": 166,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_166.png",
+      "solution_id": 1,
+      "variation": 16
+    },
+    {
+      "id": 167,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_167.png",
+      "solution_id": 1,
+      "variation": 17
+    },
+    {
+      "id": 168,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_168.png",
+      "solution_id": 1,
+      "variation": 18
+    },
+    {
+      "id": 169,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_169.png",
+      "solution_id": 1,
+      "variation": 19
+    },
+    {
+      "id": 170,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_170.png",
+      "solution_id": 1,
+      "variation": 20
+    },
+    {
+      "id": 171,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_171.png",
+      "solution_id": 1,
+      "variation": 21
+    },
+    {
+      "id": 172,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_172.png",
+      "solution_id": 1,
+      "variation": 22
+    },
+    {
+      "id": 173,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_173.png",
+      "solution_id": 1,
+      "variation": 23
+    },
+    {
+      "id": 174,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_174.png",
+      "solution_id": 1,
+      "variation": 24
+    },
+    {
+      "id": 175,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_175.png",
+      "solution_id": 1,
+      "variation": 25
+    },
+    {
+      "id": 176,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_176.png",
+      "solution_id": 1,
+      "variation": 26
+    },
+    {
+      "id": 177,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_177.png",
+      "solution_id": 1,
+      "variation": 27
+    },
+    {
+      "id": 178,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_178.png",
+      "solution_id": 1,
+      "variation": 28
+    },
+    {
+      "id": 179,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_179.png",
+      "solution_id": 1,
+      "variation": 29
+    },
+    {
+      "id": 180,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_180.png",
+      "solution_id": 1,
+      "variation": 30
+    },
+    {
+      "id": 181,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_181.png",
+      "solution_id": 1,
+      "variation": 31
+    },
+    {
+      "id": 182,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_182.png",
+      "solution_id": 1,
+      "variation": 32
+    },
+    {
+      "id": 183,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_183.png",
+      "solution_id": 1,
+      "variation": 33
+    },
+    {
+      "id": 184,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_184.png",
+      "solution_id": 1,
+      "variation": 34
+    },
+    {
+      "id": 185,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_185.png",
+      "solution_id": 1,
+      "variation": 35
+    },
+    {
+      "id": 186,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_186.png",
+      "solution_id": 1,
+      "variation": 36
+    },
+    {
+      "id": 187,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_187.png",
+      "solution_id": 1,
+      "variation": 37
+    },
+    {
+      "id": 188,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_188.png",
+      "solution_id": 1,
+      "variation": 38
+    },
+    {
+      "id": 189,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_189.png",
+      "solution_id": 1,
+      "variation": 39
+    },
+    {
+      "id": 190,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_190.png",
+      "solution_id": 1,
+      "variation": 40
+    },
+    {
+      "id": 191,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_191.png",
+      "solution_id": 1,
+      "variation": 41
+    },
+    {
+      "id": 192,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_192.png",
+      "solution_id": 1,
+      "variation": 42
+    },
+    {
+      "id": 193,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_193.png",
+      "solution_id": 1,
+      "variation": 43
+    },
+    {
+      "id": 194,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_194.png",
+      "solution_id": 1,
+      "variation": 44
+    },
+    {
+      "id": 195,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_195.png",
+      "solution_id": 1,
+      "variation": 45
+    },
+    {
+      "id": 196,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_196.png",
+      "solution_id": 1,
+      "variation": 46
+    },
+    {
+      "id": 197,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_197.png",
+      "solution_id": 1,
+      "variation": 47
+    },
+    {
+      "id": 198,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_198.png",
+      "solution_id": 1,
+      "variation": 48
+    },
+    {
+      "id": 199,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_199.png",
+      "solution_id": 1,
+      "variation": 49
+    },
+    {
+      "id": 200,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_200.png",
+      "solution_id": 1,
+      "variation": 50
+    },
+    {
+      "id": 201,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_201.png",
+      "solution_id": 1,
+      "variation": 51
+    },
+    {
+      "id": 202,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_202.png",
+      "solution_id": 1,
+      "variation": 52
+    },
+    {
+      "id": 203,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_203.png",
+      "solution_id": 1,
+      "variation": 53
+    },
+    {
+      "id": 204,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_204.png",
+      "solution_id": 1,
+      "variation": 54
+    },
+    {
+      "id": 205,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_205.png",
+      "solution_id": 1,
+      "variation": 55
+    },
+    {
+      "id": 206,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_206.png",
+      "solution_id": 1,
+      "variation": 56
+    },
+    {
+      "id": 207,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_207.png",
+      "solution_id": 1,
+      "variation": 57
+    },
+    {
+      "id": 208,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_208.png",
+      "solution_id": 1,
+      "variation": 58
+    },
+    {
+      "id": 209,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_209.png",
+      "solution_id": 1,
+      "variation": 59
+    },
+    {
+      "id": 210,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_210.png",
+      "solution_id": 1,
+      "variation": 60
+    },
+    {
+      "id": 211,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_211.png",
+      "solution_id": 1,
+      "variation": 61
+    },
+    {
+      "id": 212,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_212.png",
+      "solution_id": 1,
+      "variation": 62
+    },
+    {
+      "id": 213,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_213.png",
+      "solution_id": 1,
+      "variation": 63
+    },
+    {
+      "id": 214,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_214.png",
+      "solution_id": 1,
+      "variation": 64
+    },
+    {
+      "id": 215,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_215.png",
+      "solution_id": 1,
+      "variation": 65
+    },
+    {
+      "id": 216,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_216.png",
+      "solution_id": 1,
+      "variation": 66
+    },
+    {
+      "id": 217,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_217.png",
+      "solution_id": 1,
+      "variation": 67
+    },
+    {
+      "id": 218,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_218.png",
+      "solution_id": 1,
+      "variation": 68
+    },
+    {
+      "id": 219,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_219.png",
+      "solution_id": 1,
+      "variation": 69
+    },
+    {
+      "id": 220,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_220.png",
+      "solution_id": 1,
+      "variation": 70
+    },
+    {
+      "id": 221,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_221.png",
+      "solution_id": 1,
+      "variation": 71
+    },
+    {
+      "id": 222,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_222.png",
+      "solution_id": 1,
+      "variation": 72
+    },
+    {
+      "id": 223,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_223.png",
+      "solution_id": 1,
+      "variation": 73
+    },
+    {
+      "id": 224,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_224.png",
+      "solution_id": 1,
+      "variation": 74
+    },
+    {
+      "id": 225,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_225.png",
+      "solution_id": 1,
+      "variation": 75
+    },
+    {
+      "id": 226,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_226.png",
+      "solution_id": 1,
+      "variation": 76
+    },
+    {
+      "id": 227,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_227.png",
+      "solution_id": 1,
+      "variation": 77
+    },
+    {
+      "id": 228,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_228.png",
+      "solution_id": 1,
+      "variation": 78
+    },
+    {
+      "id": 229,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_229.png",
+      "solution_id": 1,
+      "variation": 79
+    },
+    {
+      "id": 230,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_230.png",
+      "solution_id": 1,
+      "variation": 80
+    },
+    {
+      "id": 231,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_231.png",
+      "solution_id": 1,
+      "variation": 81
+    },
+    {
+      "id": 232,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_232.png",
+      "solution_id": 1,
+      "variation": 82
+    },
+    {
+      "id": 233,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_233.png",
+      "solution_id": 1,
+      "variation": 83
+    },
+    {
+      "id": 234,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_234.png",
+      "solution_id": 1,
+      "variation": 84
+    },
+    {
+      "id": 235,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_235.png",
+      "solution_id": 1,
+      "variation": 85
+    },
+    {
+      "id": 236,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_236.png",
+      "solution_id": 1,
+      "variation": 86
+    },
+    {
+      "id": 237,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_237.png",
+      "solution_id": 1,
+      "variation": 87
+    },
+    {
+      "id": 238,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_238.png",
+      "solution_id": 1,
+      "variation": 88
+    },
+    {
+      "id": 239,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_239.png",
+      "solution_id": 1,
+      "variation": 89
+    },
+    {
+      "id": 240,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_240.png",
+      "solution_id": 1,
+      "variation": 90
+    },
+    {
+      "id": 241,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_241.png",
+      "solution_id": 1,
+      "variation": 91
+    },
+    {
+      "id": 242,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_242.png",
+      "solution_id": 1,
+      "variation": 92
+    },
+    {
+      "id": 243,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_243.png",
+      "solution_id": 1,
+      "variation": 93
+    },
+    {
+      "id": 244,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_244.png",
+      "solution_id": 1,
+      "variation": 94
+    },
+    {
+      "id": 245,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_245.png",
+      "solution_id": 1,
+      "variation": 95
+    },
+    {
+      "id": 246,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_246.png",
+      "solution_id": 1,
+      "variation": 96
+    },
+    {
+      "id": 247,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_247.png",
+      "solution_id": 1,
+      "variation": 97
+    },
+    {
+      "id": 248,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_248.png",
+      "solution_id": 1,
+      "variation": 98
+    },
+    {
+      "id": 249,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_249.png",
+      "solution_id": 1,
+      "variation": 99
+    },
+    {
+      "id": 250,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_250.png",
+      "solution_id": 1,
+      "variation": 100
+    },
+    {
+      "id": 251,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_251.png",
+      "solution_id": 1,
+      "variation": 101
+    },
+    {
+      "id": 252,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_252.png",
+      "solution_id": 1,
+      "variation": 102
+    },
+    {
+      "id": 253,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_253.png",
+      "solution_id": 1,
+      "variation": 103
+    },
+    {
+      "id": 254,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_254.png",
+      "solution_id": 1,
+      "variation": 104
+    },
+    {
+      "id": 255,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_255.png",
+      "solution_id": 1,
+      "variation": 105
+    },
+    {
+      "id": 256,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_256.png",
+      "solution_id": 1,
+      "variation": 106
+    },
+    {
+      "id": 257,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_257.png",
+      "solution_id": 1,
+      "variation": 107
+    },
+    {
+      "id": 258,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_258.png",
+      "solution_id": 1,
+      "variation": 108
+    },
+    {
+      "id": 259,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_259.png",
+      "solution_id": 1,
+      "variation": 109
+    },
+    {
+      "id": 260,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_260.png",
+      "solution_id": 1,
+      "variation": 110
+    },
+    {
+      "id": 261,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_261.png",
+      "solution_id": 1,
+      "variation": 111
+    },
+    {
+      "id": 262,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_262.png",
+      "solution_id": 1,
+      "variation": 112
+    },
+    {
+      "id": 263,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_263.png",
+      "solution_id": 1,
+      "variation": 113
+    },
+    {
+      "id": 264,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_264.png",
+      "solution_id": 1,
+      "variation": 114
+    },
+    {
+      "id": 265,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_265.png",
+      "solution_id": 1,
+      "variation": 115
+    },
+    {
+      "id": 266,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_266.png",
+      "solution_id": 1,
+      "variation": 116
+    },
+    {
+      "id": 267,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_267.png",
+      "solution_id": 1,
+      "variation": 117
+    },
+    {
+      "id": 268,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_268.png",
+      "solution_id": 1,
+      "variation": 118
+    },
+    {
+      "id": 269,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_269.png",
+      "solution_id": 1,
+      "variation": 119
+    },
+    {
+      "id": 270,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_270.png",
+      "solution_id": 1,
+      "variation": 120
+    },
+    {
+      "id": 271,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_271.png",
+      "solution_id": 1,
+      "variation": 121
+    },
+    {
+      "id": 272,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_272.png",
+      "solution_id": 1,
+      "variation": 122
+    },
+    {
+      "id": 273,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_273.png",
+      "solution_id": 1,
+      "variation": 123
+    },
+    {
+      "id": 274,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_274.png",
+      "solution_id": 1,
+      "variation": 124
+    },
+    {
+      "id": 275,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_275.png",
+      "solution_id": 1,
+      "variation": 125
+    },
+    {
+      "id": 276,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_276.png",
+      "solution_id": 1,
+      "variation": 126
+    },
+    {
+      "id": 277,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_277.png",
+      "solution_id": 1,
+      "variation": 127
+    },
+    {
+      "id": 278,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_278.png",
+      "solution_id": 1,
+      "variation": 128
+    },
+    {
+      "id": 279,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_279.png",
+      "solution_id": 1,
+      "variation": 129
+    },
+    {
+      "id": 280,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_280.png",
+      "solution_id": 1,
+      "variation": 130
+    },
+    {
+      "id": 281,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_281.png",
+      "solution_id": 1,
+      "variation": 131
+    },
+    {
+      "id": 282,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_282.png",
+      "solution_id": 1,
+      "variation": 132
+    },
+    {
+      "id": 283,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_283.png",
+      "solution_id": 1,
+      "variation": 133
+    },
+    {
+      "id": 284,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_284.png",
+      "solution_id": 1,
+      "variation": 134
+    },
+    {
+      "id": 285,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_285.png",
+      "solution_id": 1,
+      "variation": 135
+    },
+    {
+      "id": 286,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_286.png",
+      "solution_id": 1,
+      "variation": 136
+    },
+    {
+      "id": 287,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_287.png",
+      "solution_id": 1,
+      "variation": 137
+    },
+    {
+      "id": 288,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_288.png",
+      "solution_id": 1,
+      "variation": 138
+    },
+    {
+      "id": 289,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_289.png",
+      "solution_id": 1,
+      "variation": 139
+    },
+    {
+      "id": 290,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_290.png",
+      "solution_id": 1,
+      "variation": 140
+    },
+    {
+      "id": 291,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_291.png",
+      "solution_id": 1,
+      "variation": 141
+    },
+    {
+      "id": 292,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_292.png",
+      "solution_id": 1,
+      "variation": 142
+    },
+    {
+      "id": 293,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_293.png",
+      "solution_id": 1,
+      "variation": 143
+    },
+    {
+      "id": 294,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_294.png",
+      "solution_id": 1,
+      "variation": 144
+    },
+    {
+      "id": 295,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_295.png",
+      "solution_id": 1,
+      "variation": 145
+    },
+    {
+      "id": 296,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_296.png",
+      "solution_id": 1,
+      "variation": 146
+    },
+    {
+      "id": 297,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_297.png",
+      "solution_id": 1,
+      "variation": 147
+    },
+    {
+      "id": 298,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_298.png",
+      "solution_id": 1,
+      "variation": 148
+    },
+    {
+      "id": 299,
+      "sequence": [
+        "R",
+        "U",
+        "R",
+        "U",
+        "R",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_299.png",
+      "solution_id": 1,
+      "variation": 149
+    },
+    {
+      "id": 300,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_300.png",
+      "solution_id": 2,
+      "variation": 0
+    },
+    {
+      "id": 301,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_301.png",
+      "solution_id": 2,
+      "variation": 1
+    },
+    {
+      "id": 302,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_302.png",
+      "solution_id": 2,
+      "variation": 2
+    },
+    {
+      "id": 303,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_303.png",
+      "solution_id": 2,
+      "variation": 3
+    },
+    {
+      "id": 304,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_304.png",
+      "solution_id": 2,
+      "variation": 4
+    },
+    {
+      "id": 305,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_305.png",
+      "solution_id": 2,
+      "variation": 5
+    },
+    {
+      "id": 306,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_306.png",
+      "solution_id": 2,
+      "variation": 6
+    },
+    {
+      "id": 307,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_307.png",
+      "solution_id": 2,
+      "variation": 7
+    },
+    {
+      "id": 308,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_308.png",
+      "solution_id": 2,
+      "variation": 8
+    },
+    {
+      "id": 309,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_309.png",
+      "solution_id": 2,
+      "variation": 9
+    },
+    {
+      "id": 310,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_310.png",
+      "solution_id": 2,
+      "variation": 10
+    },
+    {
+      "id": 311,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_311.png",
+      "solution_id": 2,
+      "variation": 11
+    },
+    {
+      "id": 312,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_312.png",
+      "solution_id": 2,
+      "variation": 12
+    },
+    {
+      "id": 313,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_313.png",
+      "solution_id": 2,
+      "variation": 13
+    },
+    {
+      "id": 314,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_314.png",
+      "solution_id": 2,
+      "variation": 14
+    },
+    {
+      "id": 315,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_315.png",
+      "solution_id": 2,
+      "variation": 15
+    },
+    {
+      "id": 316,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_316.png",
+      "solution_id": 2,
+      "variation": 16
+    },
+    {
+      "id": 317,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_317.png",
+      "solution_id": 2,
+      "variation": 17
+    },
+    {
+      "id": 318,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_318.png",
+      "solution_id": 2,
+      "variation": 18
+    },
+    {
+      "id": 319,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_319.png",
+      "solution_id": 2,
+      "variation": 19
+    },
+    {
+      "id": 320,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_320.png",
+      "solution_id": 2,
+      "variation": 20
+    },
+    {
+      "id": 321,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_321.png",
+      "solution_id": 2,
+      "variation": 21
+    },
+    {
+      "id": 322,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_322.png",
+      "solution_id": 2,
+      "variation": 22
+    },
+    {
+      "id": 323,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_323.png",
+      "solution_id": 2,
+      "variation": 23
+    },
+    {
+      "id": 324,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_324.png",
+      "solution_id": 2,
+      "variation": 24
+    },
+    {
+      "id": 325,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_325.png",
+      "solution_id": 2,
+      "variation": 25
+    },
+    {
+      "id": 326,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_326.png",
+      "solution_id": 2,
+      "variation": 26
+    },
+    {
+      "id": 327,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_327.png",
+      "solution_id": 2,
+      "variation": 27
+    },
+    {
+      "id": 328,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_328.png",
+      "solution_id": 2,
+      "variation": 28
+    },
+    {
+      "id": 329,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_329.png",
+      "solution_id": 2,
+      "variation": 29
+    },
+    {
+      "id": 330,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_330.png",
+      "solution_id": 2,
+      "variation": 30
+    },
+    {
+      "id": 331,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_331.png",
+      "solution_id": 2,
+      "variation": 31
+    },
+    {
+      "id": 332,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_332.png",
+      "solution_id": 2,
+      "variation": 32
+    },
+    {
+      "id": 333,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_333.png",
+      "solution_id": 2,
+      "variation": 33
+    },
+    {
+      "id": 334,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_334.png",
+      "solution_id": 2,
+      "variation": 34
+    },
+    {
+      "id": 335,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_335.png",
+      "solution_id": 2,
+      "variation": 35
+    },
+    {
+      "id": 336,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_336.png",
+      "solution_id": 2,
+      "variation": 36
+    },
+    {
+      "id": 337,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_337.png",
+      "solution_id": 2,
+      "variation": 37
+    },
+    {
+      "id": 338,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_338.png",
+      "solution_id": 2,
+      "variation": 38
+    },
+    {
+      "id": 339,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_339.png",
+      "solution_id": 2,
+      "variation": 39
+    },
+    {
+      "id": 340,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_340.png",
+      "solution_id": 2,
+      "variation": 40
+    },
+    {
+      "id": 341,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_341.png",
+      "solution_id": 2,
+      "variation": 41
+    },
+    {
+      "id": 342,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_342.png",
+      "solution_id": 2,
+      "variation": 42
+    },
+    {
+      "id": 343,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_343.png",
+      "solution_id": 2,
+      "variation": 43
+    },
+    {
+      "id": 344,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_344.png",
+      "solution_id": 2,
+      "variation": 44
+    },
+    {
+      "id": 345,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_345.png",
+      "solution_id": 2,
+      "variation": 45
+    },
+    {
+      "id": 346,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_346.png",
+      "solution_id": 2,
+      "variation": 46
+    },
+    {
+      "id": 347,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_347.png",
+      "solution_id": 2,
+      "variation": 47
+    },
+    {
+      "id": 348,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_348.png",
+      "solution_id": 2,
+      "variation": 48
+    },
+    {
+      "id": 349,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_349.png",
+      "solution_id": 2,
+      "variation": 49
+    },
+    {
+      "id": 350,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_350.png",
+      "solution_id": 2,
+      "variation": 50
+    },
+    {
+      "id": 351,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_351.png",
+      "solution_id": 2,
+      "variation": 51
+    },
+    {
+      "id": 352,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_352.png",
+      "solution_id": 2,
+      "variation": 52
+    },
+    {
+      "id": 353,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_353.png",
+      "solution_id": 2,
+      "variation": 53
+    },
+    {
+      "id": 354,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_354.png",
+      "solution_id": 2,
+      "variation": 54
+    },
+    {
+      "id": 355,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_355.png",
+      "solution_id": 2,
+      "variation": 55
+    },
+    {
+      "id": 356,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_356.png",
+      "solution_id": 2,
+      "variation": 56
+    },
+    {
+      "id": 357,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_357.png",
+      "solution_id": 2,
+      "variation": 57
+    },
+    {
+      "id": 358,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_358.png",
+      "solution_id": 2,
+      "variation": 58
+    },
+    {
+      "id": 359,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_359.png",
+      "solution_id": 2,
+      "variation": 59
+    },
+    {
+      "id": 360,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_360.png",
+      "solution_id": 2,
+      "variation": 60
+    },
+    {
+      "id": 361,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_361.png",
+      "solution_id": 2,
+      "variation": 61
+    },
+    {
+      "id": 362,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_362.png",
+      "solution_id": 2,
+      "variation": 62
+    },
+    {
+      "id": 363,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_363.png",
+      "solution_id": 2,
+      "variation": 63
+    },
+    {
+      "id": 364,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_364.png",
+      "solution_id": 2,
+      "variation": 64
+    },
+    {
+      "id": 365,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_365.png",
+      "solution_id": 2,
+      "variation": 65
+    },
+    {
+      "id": 366,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_366.png",
+      "solution_id": 2,
+      "variation": 66
+    },
+    {
+      "id": 367,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_367.png",
+      "solution_id": 2,
+      "variation": 67
+    },
+    {
+      "id": 368,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_368.png",
+      "solution_id": 2,
+      "variation": 68
+    },
+    {
+      "id": 369,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_369.png",
+      "solution_id": 2,
+      "variation": 69
+    },
+    {
+      "id": 370,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_370.png",
+      "solution_id": 2,
+      "variation": 70
+    },
+    {
+      "id": 371,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_371.png",
+      "solution_id": 2,
+      "variation": 71
+    },
+    {
+      "id": 372,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_372.png",
+      "solution_id": 2,
+      "variation": 72
+    },
+    {
+      "id": 373,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_373.png",
+      "solution_id": 2,
+      "variation": 73
+    },
+    {
+      "id": 374,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_374.png",
+      "solution_id": 2,
+      "variation": 74
+    },
+    {
+      "id": 375,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_375.png",
+      "solution_id": 2,
+      "variation": 75
+    },
+    {
+      "id": 376,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_376.png",
+      "solution_id": 2,
+      "variation": 76
+    },
+    {
+      "id": 377,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_377.png",
+      "solution_id": 2,
+      "variation": 77
+    },
+    {
+      "id": 378,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_378.png",
+      "solution_id": 2,
+      "variation": 78
+    },
+    {
+      "id": 379,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_379.png",
+      "solution_id": 2,
+      "variation": 79
+    },
+    {
+      "id": 380,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_380.png",
+      "solution_id": 2,
+      "variation": 80
+    },
+    {
+      "id": 381,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_381.png",
+      "solution_id": 2,
+      "variation": 81
+    },
+    {
+      "id": 382,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_382.png",
+      "solution_id": 2,
+      "variation": 82
+    },
+    {
+      "id": 383,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_383.png",
+      "solution_id": 2,
+      "variation": 83
+    },
+    {
+      "id": 384,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_384.png",
+      "solution_id": 2,
+      "variation": 84
+    },
+    {
+      "id": 385,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_385.png",
+      "solution_id": 2,
+      "variation": 85
+    },
+    {
+      "id": 386,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_386.png",
+      "solution_id": 2,
+      "variation": 86
+    },
+    {
+      "id": 387,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_387.png",
+      "solution_id": 2,
+      "variation": 87
+    },
+    {
+      "id": 388,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_388.png",
+      "solution_id": 2,
+      "variation": 88
+    },
+    {
+      "id": 389,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_389.png",
+      "solution_id": 2,
+      "variation": 89
+    },
+    {
+      "id": 390,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_390.png",
+      "solution_id": 2,
+      "variation": 90
+    },
+    {
+      "id": 391,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_391.png",
+      "solution_id": 2,
+      "variation": 91
+    },
+    {
+      "id": 392,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_392.png",
+      "solution_id": 2,
+      "variation": 92
+    },
+    {
+      "id": 393,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_393.png",
+      "solution_id": 2,
+      "variation": 93
+    },
+    {
+      "id": 394,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_394.png",
+      "solution_id": 2,
+      "variation": 94
+    },
+    {
+      "id": 395,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_395.png",
+      "solution_id": 2,
+      "variation": 95
+    },
+    {
+      "id": 396,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_396.png",
+      "solution_id": 2,
+      "variation": 96
+    },
+    {
+      "id": 397,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_397.png",
+      "solution_id": 2,
+      "variation": 97
+    },
+    {
+      "id": 398,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_398.png",
+      "solution_id": 2,
+      "variation": 98
+    },
+    {
+      "id": 399,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_399.png",
+      "solution_id": 2,
+      "variation": 99
+    },
+    {
+      "id": 400,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_400.png",
+      "solution_id": 2,
+      "variation": 100
+    },
+    {
+      "id": 401,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_401.png",
+      "solution_id": 2,
+      "variation": 101
+    },
+    {
+      "id": 402,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_402.png",
+      "solution_id": 2,
+      "variation": 102
+    },
+    {
+      "id": 403,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_403.png",
+      "solution_id": 2,
+      "variation": 103
+    },
+    {
+      "id": 404,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_404.png",
+      "solution_id": 2,
+      "variation": 104
+    },
+    {
+      "id": 405,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_405.png",
+      "solution_id": 2,
+      "variation": 105
+    },
+    {
+      "id": 406,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_406.png",
+      "solution_id": 2,
+      "variation": 106
+    },
+    {
+      "id": 407,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_407.png",
+      "solution_id": 2,
+      "variation": 107
+    },
+    {
+      "id": 408,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_408.png",
+      "solution_id": 2,
+      "variation": 108
+    },
+    {
+      "id": 409,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_409.png",
+      "solution_id": 2,
+      "variation": 109
+    },
+    {
+      "id": 410,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_410.png",
+      "solution_id": 2,
+      "variation": 110
+    },
+    {
+      "id": 411,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_411.png",
+      "solution_id": 2,
+      "variation": 111
+    },
+    {
+      "id": 412,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_412.png",
+      "solution_id": 2,
+      "variation": 112
+    },
+    {
+      "id": 413,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_413.png",
+      "solution_id": 2,
+      "variation": 113
+    },
+    {
+      "id": 414,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_414.png",
+      "solution_id": 2,
+      "variation": 114
+    },
+    {
+      "id": 415,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_415.png",
+      "solution_id": 2,
+      "variation": 115
+    },
+    {
+      "id": 416,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_416.png",
+      "solution_id": 2,
+      "variation": 116
+    },
+    {
+      "id": 417,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_417.png",
+      "solution_id": 2,
+      "variation": 117
+    },
+    {
+      "id": 418,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_418.png",
+      "solution_id": 2,
+      "variation": 118
+    },
+    {
+      "id": 419,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_419.png",
+      "solution_id": 2,
+      "variation": 119
+    },
+    {
+      "id": 420,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_420.png",
+      "solution_id": 2,
+      "variation": 120
+    },
+    {
+      "id": 421,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_421.png",
+      "solution_id": 2,
+      "variation": 121
+    },
+    {
+      "id": 422,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_422.png",
+      "solution_id": 2,
+      "variation": 122
+    },
+    {
+      "id": 423,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_423.png",
+      "solution_id": 2,
+      "variation": 123
+    },
+    {
+      "id": 424,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_424.png",
+      "solution_id": 2,
+      "variation": 124
+    },
+    {
+      "id": 425,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_425.png",
+      "solution_id": 2,
+      "variation": 125
+    },
+    {
+      "id": 426,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_426.png",
+      "solution_id": 2,
+      "variation": 126
+    },
+    {
+      "id": 427,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_427.png",
+      "solution_id": 2,
+      "variation": 127
+    },
+    {
+      "id": 428,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_428.png",
+      "solution_id": 2,
+      "variation": 128
+    },
+    {
+      "id": 429,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_429.png",
+      "solution_id": 2,
+      "variation": 129
+    },
+    {
+      "id": 430,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_430.png",
+      "solution_id": 2,
+      "variation": 130
+    },
+    {
+      "id": 431,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_431.png",
+      "solution_id": 2,
+      "variation": 131
+    },
+    {
+      "id": 432,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_432.png",
+      "solution_id": 2,
+      "variation": 132
+    },
+    {
+      "id": 433,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_433.png",
+      "solution_id": 2,
+      "variation": 133
+    },
+    {
+      "id": 434,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_434.png",
+      "solution_id": 2,
+      "variation": 134
+    },
+    {
+      "id": 435,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_435.png",
+      "solution_id": 2,
+      "variation": 135
+    },
+    {
+      "id": 436,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_436.png",
+      "solution_id": 2,
+      "variation": 136
+    },
+    {
+      "id": 437,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_437.png",
+      "solution_id": 2,
+      "variation": 137
+    },
+    {
+      "id": 438,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_438.png",
+      "solution_id": 2,
+      "variation": 138
+    },
+    {
+      "id": 439,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_439.png",
+      "solution_id": 2,
+      "variation": 139
+    },
+    {
+      "id": 440,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_440.png",
+      "solution_id": 2,
+      "variation": 140
+    },
+    {
+      "id": 441,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_441.png",
+      "solution_id": 2,
+      "variation": 141
+    },
+    {
+      "id": 442,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_442.png",
+      "solution_id": 2,
+      "variation": 142
+    },
+    {
+      "id": 443,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_443.png",
+      "solution_id": 2,
+      "variation": 143
+    },
+    {
+      "id": 444,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_444.png",
+      "solution_id": 2,
+      "variation": 144
+    },
+    {
+      "id": 445,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_445.png",
+      "solution_id": 2,
+      "variation": 145
+    },
+    {
+      "id": 446,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_446.png",
+      "solution_id": 2,
+      "variation": 146
+    },
+    {
+      "id": 447,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_447.png",
+      "solution_id": 2,
+      "variation": 147
+    },
+    {
+      "id": 448,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_448.png",
+      "solution_id": 2,
+      "variation": 148
+    },
+    {
+      "id": 449,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "U",
+        "U",
+        "R"
+      ],
+      "image": "data/4x4/grids/test/grid_449.png",
+      "solution_id": 2,
+      "variation": 149
+    },
+    {
+      "id": 450,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_450.png",
+      "solution_id": 3,
+      "variation": 0
+    },
+    {
+      "id": 451,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_451.png",
+      "solution_id": 3,
+      "variation": 1
+    },
+    {
+      "id": 452,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_452.png",
+      "solution_id": 3,
+      "variation": 2
+    },
+    {
+      "id": 453,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_453.png",
+      "solution_id": 3,
+      "variation": 3
+    },
+    {
+      "id": 454,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_454.png",
+      "solution_id": 3,
+      "variation": 4
+    },
+    {
+      "id": 455,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_455.png",
+      "solution_id": 3,
+      "variation": 5
+    },
+    {
+      "id": 456,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_456.png",
+      "solution_id": 3,
+      "variation": 6
+    },
+    {
+      "id": 457,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_457.png",
+      "solution_id": 3,
+      "variation": 7
+    },
+    {
+      "id": 458,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_458.png",
+      "solution_id": 3,
+      "variation": 8
+    },
+    {
+      "id": 459,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_459.png",
+      "solution_id": 3,
+      "variation": 9
+    },
+    {
+      "id": 460,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_460.png",
+      "solution_id": 3,
+      "variation": 10
+    },
+    {
+      "id": 461,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_461.png",
+      "solution_id": 3,
+      "variation": 11
+    },
+    {
+      "id": 462,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_462.png",
+      "solution_id": 3,
+      "variation": 12
+    },
+    {
+      "id": 463,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_463.png",
+      "solution_id": 3,
+      "variation": 13
+    },
+    {
+      "id": 464,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_464.png",
+      "solution_id": 3,
+      "variation": 14
+    },
+    {
+      "id": 465,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_465.png",
+      "solution_id": 3,
+      "variation": 15
+    },
+    {
+      "id": 466,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_466.png",
+      "solution_id": 3,
+      "variation": 16
+    },
+    {
+      "id": 467,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_467.png",
+      "solution_id": 3,
+      "variation": 17
+    },
+    {
+      "id": 468,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_468.png",
+      "solution_id": 3,
+      "variation": 18
+    },
+    {
+      "id": 469,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_469.png",
+      "solution_id": 3,
+      "variation": 19
+    },
+    {
+      "id": 470,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_470.png",
+      "solution_id": 3,
+      "variation": 20
+    },
+    {
+      "id": 471,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_471.png",
+      "solution_id": 3,
+      "variation": 21
+    },
+    {
+      "id": 472,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_472.png",
+      "solution_id": 3,
+      "variation": 22
+    },
+    {
+      "id": 473,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_473.png",
+      "solution_id": 3,
+      "variation": 23
+    },
+    {
+      "id": 474,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_474.png",
+      "solution_id": 3,
+      "variation": 24
+    },
+    {
+      "id": 475,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_475.png",
+      "solution_id": 3,
+      "variation": 25
+    },
+    {
+      "id": 476,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_476.png",
+      "solution_id": 3,
+      "variation": 26
+    },
+    {
+      "id": 477,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_477.png",
+      "solution_id": 3,
+      "variation": 27
+    },
+    {
+      "id": 478,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_478.png",
+      "solution_id": 3,
+      "variation": 28
+    },
+    {
+      "id": 479,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_479.png",
+      "solution_id": 3,
+      "variation": 29
+    },
+    {
+      "id": 480,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_480.png",
+      "solution_id": 3,
+      "variation": 30
+    },
+    {
+      "id": 481,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_481.png",
+      "solution_id": 3,
+      "variation": 31
+    },
+    {
+      "id": 482,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_482.png",
+      "solution_id": 3,
+      "variation": 32
+    },
+    {
+      "id": 483,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_483.png",
+      "solution_id": 3,
+      "variation": 33
+    },
+    {
+      "id": 484,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_484.png",
+      "solution_id": 3,
+      "variation": 34
+    },
+    {
+      "id": 485,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_485.png",
+      "solution_id": 3,
+      "variation": 35
+    },
+    {
+      "id": 486,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_486.png",
+      "solution_id": 3,
+      "variation": 36
+    },
+    {
+      "id": 487,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_487.png",
+      "solution_id": 3,
+      "variation": 37
+    },
+    {
+      "id": 488,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_488.png",
+      "solution_id": 3,
+      "variation": 38
+    },
+    {
+      "id": 489,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_489.png",
+      "solution_id": 3,
+      "variation": 39
+    },
+    {
+      "id": 490,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_490.png",
+      "solution_id": 3,
+      "variation": 40
+    },
+    {
+      "id": 491,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_491.png",
+      "solution_id": 3,
+      "variation": 41
+    },
+    {
+      "id": 492,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_492.png",
+      "solution_id": 3,
+      "variation": 42
+    },
+    {
+      "id": 493,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_493.png",
+      "solution_id": 3,
+      "variation": 43
+    },
+    {
+      "id": 494,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_494.png",
+      "solution_id": 3,
+      "variation": 44
+    },
+    {
+      "id": 495,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_495.png",
+      "solution_id": 3,
+      "variation": 45
+    },
+    {
+      "id": 496,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_496.png",
+      "solution_id": 3,
+      "variation": 46
+    },
+    {
+      "id": 497,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_497.png",
+      "solution_id": 3,
+      "variation": 47
+    },
+    {
+      "id": 498,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_498.png",
+      "solution_id": 3,
+      "variation": 48
+    },
+    {
+      "id": 499,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_499.png",
+      "solution_id": 3,
+      "variation": 49
+    },
+    {
+      "id": 500,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_500.png",
+      "solution_id": 3,
+      "variation": 50
+    },
+    {
+      "id": 501,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_501.png",
+      "solution_id": 3,
+      "variation": 51
+    },
+    {
+      "id": 502,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_502.png",
+      "solution_id": 3,
+      "variation": 52
+    },
+    {
+      "id": 503,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_503.png",
+      "solution_id": 3,
+      "variation": 53
+    },
+    {
+      "id": 504,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_504.png",
+      "solution_id": 3,
+      "variation": 54
+    },
+    {
+      "id": 505,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_505.png",
+      "solution_id": 3,
+      "variation": 55
+    },
+    {
+      "id": 506,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_506.png",
+      "solution_id": 3,
+      "variation": 56
+    },
+    {
+      "id": 507,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_507.png",
+      "solution_id": 3,
+      "variation": 57
+    },
+    {
+      "id": 508,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_508.png",
+      "solution_id": 3,
+      "variation": 58
+    },
+    {
+      "id": 509,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_509.png",
+      "solution_id": 3,
+      "variation": 59
+    },
+    {
+      "id": 510,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_510.png",
+      "solution_id": 3,
+      "variation": 60
+    },
+    {
+      "id": 511,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_511.png",
+      "solution_id": 3,
+      "variation": 61
+    },
+    {
+      "id": 512,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_512.png",
+      "solution_id": 3,
+      "variation": 62
+    },
+    {
+      "id": 513,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_513.png",
+      "solution_id": 3,
+      "variation": 63
+    },
+    {
+      "id": 514,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_514.png",
+      "solution_id": 3,
+      "variation": 64
+    },
+    {
+      "id": 515,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_515.png",
+      "solution_id": 3,
+      "variation": 65
+    },
+    {
+      "id": 516,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_516.png",
+      "solution_id": 3,
+      "variation": 66
+    },
+    {
+      "id": 517,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_517.png",
+      "solution_id": 3,
+      "variation": 67
+    },
+    {
+      "id": 518,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_518.png",
+      "solution_id": 3,
+      "variation": 68
+    },
+    {
+      "id": 519,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_519.png",
+      "solution_id": 3,
+      "variation": 69
+    },
+    {
+      "id": 520,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_520.png",
+      "solution_id": 3,
+      "variation": 70
+    },
+    {
+      "id": 521,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_521.png",
+      "solution_id": 3,
+      "variation": 71
+    },
+    {
+      "id": 522,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_522.png",
+      "solution_id": 3,
+      "variation": 72
+    },
+    {
+      "id": 523,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_523.png",
+      "solution_id": 3,
+      "variation": 73
+    },
+    {
+      "id": 524,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_524.png",
+      "solution_id": 3,
+      "variation": 74
+    },
+    {
+      "id": 525,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_525.png",
+      "solution_id": 3,
+      "variation": 75
+    },
+    {
+      "id": 526,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_526.png",
+      "solution_id": 3,
+      "variation": 76
+    },
+    {
+      "id": 527,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_527.png",
+      "solution_id": 3,
+      "variation": 77
+    },
+    {
+      "id": 528,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_528.png",
+      "solution_id": 3,
+      "variation": 78
+    },
+    {
+      "id": 529,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_529.png",
+      "solution_id": 3,
+      "variation": 79
+    },
+    {
+      "id": 530,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_530.png",
+      "solution_id": 3,
+      "variation": 80
+    },
+    {
+      "id": 531,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_531.png",
+      "solution_id": 3,
+      "variation": 81
+    },
+    {
+      "id": 532,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_532.png",
+      "solution_id": 3,
+      "variation": 82
+    },
+    {
+      "id": 533,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_533.png",
+      "solution_id": 3,
+      "variation": 83
+    },
+    {
+      "id": 534,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_534.png",
+      "solution_id": 3,
+      "variation": 84
+    },
+    {
+      "id": 535,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_535.png",
+      "solution_id": 3,
+      "variation": 85
+    },
+    {
+      "id": 536,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_536.png",
+      "solution_id": 3,
+      "variation": 86
+    },
+    {
+      "id": 537,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_537.png",
+      "solution_id": 3,
+      "variation": 87
+    },
+    {
+      "id": 538,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_538.png",
+      "solution_id": 3,
+      "variation": 88
+    },
+    {
+      "id": 539,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_539.png",
+      "solution_id": 3,
+      "variation": 89
+    },
+    {
+      "id": 540,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_540.png",
+      "solution_id": 3,
+      "variation": 90
+    },
+    {
+      "id": 541,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_541.png",
+      "solution_id": 3,
+      "variation": 91
+    },
+    {
+      "id": 542,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_542.png",
+      "solution_id": 3,
+      "variation": 92
+    },
+    {
+      "id": 543,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_543.png",
+      "solution_id": 3,
+      "variation": 93
+    },
+    {
+      "id": 544,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_544.png",
+      "solution_id": 3,
+      "variation": 94
+    },
+    {
+      "id": 545,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_545.png",
+      "solution_id": 3,
+      "variation": 95
+    },
+    {
+      "id": 546,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_546.png",
+      "solution_id": 3,
+      "variation": 96
+    },
+    {
+      "id": 547,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_547.png",
+      "solution_id": 3,
+      "variation": 97
+    },
+    {
+      "id": 548,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_548.png",
+      "solution_id": 3,
+      "variation": 98
+    },
+    {
+      "id": 549,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_549.png",
+      "solution_id": 3,
+      "variation": 99
+    },
+    {
+      "id": 550,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_550.png",
+      "solution_id": 3,
+      "variation": 100
+    },
+    {
+      "id": 551,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_551.png",
+      "solution_id": 3,
+      "variation": 101
+    },
+    {
+      "id": 552,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_552.png",
+      "solution_id": 3,
+      "variation": 102
+    },
+    {
+      "id": 553,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_553.png",
+      "solution_id": 3,
+      "variation": 103
+    },
+    {
+      "id": 554,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_554.png",
+      "solution_id": 3,
+      "variation": 104
+    },
+    {
+      "id": 555,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_555.png",
+      "solution_id": 3,
+      "variation": 105
+    },
+    {
+      "id": 556,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_556.png",
+      "solution_id": 3,
+      "variation": 106
+    },
+    {
+      "id": 557,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_557.png",
+      "solution_id": 3,
+      "variation": 107
+    },
+    {
+      "id": 558,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_558.png",
+      "solution_id": 3,
+      "variation": 108
+    },
+    {
+      "id": 559,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_559.png",
+      "solution_id": 3,
+      "variation": 109
+    },
+    {
+      "id": 560,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_560.png",
+      "solution_id": 3,
+      "variation": 110
+    },
+    {
+      "id": 561,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_561.png",
+      "solution_id": 3,
+      "variation": 111
+    },
+    {
+      "id": 562,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_562.png",
+      "solution_id": 3,
+      "variation": 112
+    },
+    {
+      "id": 563,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_563.png",
+      "solution_id": 3,
+      "variation": 113
+    },
+    {
+      "id": 564,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_564.png",
+      "solution_id": 3,
+      "variation": 114
+    },
+    {
+      "id": 565,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_565.png",
+      "solution_id": 3,
+      "variation": 115
+    },
+    {
+      "id": 566,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_566.png",
+      "solution_id": 3,
+      "variation": 116
+    },
+    {
+      "id": 567,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_567.png",
+      "solution_id": 3,
+      "variation": 117
+    },
+    {
+      "id": 568,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_568.png",
+      "solution_id": 3,
+      "variation": 118
+    },
+    {
+      "id": 569,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_569.png",
+      "solution_id": 3,
+      "variation": 119
+    },
+    {
+      "id": 570,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_570.png",
+      "solution_id": 3,
+      "variation": 120
+    },
+    {
+      "id": 571,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_571.png",
+      "solution_id": 3,
+      "variation": 121
+    },
+    {
+      "id": 572,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_572.png",
+      "solution_id": 3,
+      "variation": 122
+    },
+    {
+      "id": 573,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_573.png",
+      "solution_id": 3,
+      "variation": 123
+    },
+    {
+      "id": 574,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_574.png",
+      "solution_id": 3,
+      "variation": 124
+    },
+    {
+      "id": 575,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_575.png",
+      "solution_id": 3,
+      "variation": 125
+    },
+    {
+      "id": 576,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_576.png",
+      "solution_id": 3,
+      "variation": 126
+    },
+    {
+      "id": 577,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_577.png",
+      "solution_id": 3,
+      "variation": 127
+    },
+    {
+      "id": 578,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_578.png",
+      "solution_id": 3,
+      "variation": 128
+    },
+    {
+      "id": 579,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_579.png",
+      "solution_id": 3,
+      "variation": 129
+    },
+    {
+      "id": 580,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_580.png",
+      "solution_id": 3,
+      "variation": 130
+    },
+    {
+      "id": 581,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_581.png",
+      "solution_id": 3,
+      "variation": 131
+    },
+    {
+      "id": 582,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_582.png",
+      "solution_id": 3,
+      "variation": 132
+    },
+    {
+      "id": 583,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_583.png",
+      "solution_id": 3,
+      "variation": 133
+    },
+    {
+      "id": 584,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_584.png",
+      "solution_id": 3,
+      "variation": 134
+    },
+    {
+      "id": 585,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_585.png",
+      "solution_id": 3,
+      "variation": 135
+    },
+    {
+      "id": 586,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_586.png",
+      "solution_id": 3,
+      "variation": 136
+    },
+    {
+      "id": 587,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_587.png",
+      "solution_id": 3,
+      "variation": 137
+    },
+    {
+      "id": 588,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_588.png",
+      "solution_id": 3,
+      "variation": 138
+    },
+    {
+      "id": 589,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_589.png",
+      "solution_id": 3,
+      "variation": 139
+    },
+    {
+      "id": 590,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_590.png",
+      "solution_id": 3,
+      "variation": 140
+    },
+    {
+      "id": 591,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_591.png",
+      "solution_id": 3,
+      "variation": 141
+    },
+    {
+      "id": 592,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_592.png",
+      "solution_id": 3,
+      "variation": 142
+    },
+    {
+      "id": 593,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_593.png",
+      "solution_id": 3,
+      "variation": 143
+    },
+    {
+      "id": 594,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_594.png",
+      "solution_id": 3,
+      "variation": 144
+    },
+    {
+      "id": 595,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_595.png",
+      "solution_id": 3,
+      "variation": 145
+    },
+    {
+      "id": 596,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_596.png",
+      "solution_id": 3,
+      "variation": 146
+    },
+    {
+      "id": 597,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_597.png",
+      "solution_id": 3,
+      "variation": 147
+    },
+    {
+      "id": 598,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_598.png",
+      "solution_id": 3,
+      "variation": 148
+    },
+    {
+      "id": 599,
+      "sequence": [
+        "R",
+        "R",
+        "U",
+        "R",
+        "U",
+        "U"
+      ],
+      "image": "data/4x4/grids/test/grid_599.png",
+      "solution_id": 3,
+      "variation": 149
+    }
+  ]
+}
