@@ -167,7 +167,7 @@ def num_monotonic_paths(rows, cols):
     return math.comb(rows + cols - 2, rows - 1)
 
 
-def generate_grids_with_variations(paths, rows, cols, base_seed, num_variations=5, train_split=0.8):
+def generate_grids_with_variations(paths, rows, cols, base_seed, num_variations=5, train_split=0.8, data_dir="data"):
     """
     Generate multiple TRULY DIFFERENT maze variations for each solution path.
     """
@@ -203,7 +203,7 @@ def generate_grids_with_variations(paths, rows, cols, base_seed, num_variations=
         for var_idx in range(num_variations):
             variation_seed = base_seed + path_idx * 1000 + var_idx
             
-            image_path = f"data/grids/train/grid_{len(train_data)}.png"
+            image_path = f"{data_dir}/grids/train/grid_{len(train_data)}.png"
             grid = generate_grid_from_path(
                 path, rows, cols, 
                 save_path=image_path,
@@ -228,7 +228,7 @@ def generate_grids_with_variations(paths, rows, cols, base_seed, num_variations=
         for var_idx in range(num_variations):
             variation_seed = base_seed + 500000 + path_idx * 1000 + var_idx
             
-            image_path = f"data/grids/test/grid_{len(test_data)}.png"
+            image_path = f"{data_dir}/grids/test/grid_{len(test_data)}.png"
             grid = generate_grid_from_path(
                 path, rows, cols,
                 save_path=image_path,
@@ -302,38 +302,35 @@ def check_duplicates(train_data, test_data):
     print(f"{'='*60}\n")
 
 
-def save_datasets(train_data, test_data, metadata):
+def save_datasets(train_data, test_data, metadata, data_dir="data"):
     """Save train and test datasets to separate JSON files with metadata."""
-    
+
     # Wrap entries with metadata
     train_output = {
         'metadata': metadata,
         'entries': train_data
     }
-    
+
     test_output = {
         'metadata': metadata,
         'entries': test_data
     }
-    
-    with open("data/train_sequences.json", "w") as f:
+
+    with open(f"{data_dir}/train_sequences.json", "w") as f:
         json.dump(train_output, f, indent=2)
-    
-    with open("data/test_sequences.json", "w") as f:
+
+    with open(f"{data_dir}/test_sequences.json", "w") as f:
         json.dump(test_output, f, indent=2)
-    
-    print(f"\n✓ Saved {len(train_data)} train examples to data/train_sequences.json")
-    print(f"✓ Saved {len(test_data)} test examples to data/test_sequences.json")
+
+    print(f"\n✓ Saved {len(train_data)} train examples to {data_dir}/train_sequences.json")
+    print(f"✓ Saved {len(test_data)} test examples to {data_dir}/test_sequences.json")
     print(f"✓ Metadata included: {metadata}")
 
 if __name__ == "__main__":
-    os.makedirs("data/grids/train", exist_ok=True)
-    os.makedirs("data/grids/test", exist_ok=True)
-
     parser = argparse.ArgumentParser(description='Generate maze dataset with REAL variations')
     parser.add_argument('--seed', type=int, default=69, help='Random seed')
     parser.add_argument('--size', type=int, default=4, help='Grid Size (rows and cols)')
-    parser.add_argument('--variations', type=int, default=150, 
+    parser.add_argument('--variations', type=int, default=150,
                         help='Number of truly different wall variations per solution')
     parser.add_argument('--train_split', type=float, default=0.8,
                         help='Proportion of solutions for training (0.8 = 80%)')
@@ -341,8 +338,12 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     rng = random.Random(args.seed)
-    
     rows = cols = args.size
+
+    # Organize data by grid size: data/NxN/
+    data_dir = f"data/{rows}x{cols}"
+    os.makedirs(f"{data_dir}/grids/train", exist_ok=True)
+    os.makedirs(f"{data_dir}/grids/test", exist_ok=True)
 
     # Create metadata to save with the datasets
     metadata = {
@@ -360,25 +361,26 @@ if __name__ == "__main__":
     max_num_sequences = num_monotonic_paths(rows, cols)
     paths = generate_random_unique_paths(rows, cols, rng, max_num_sequences)
     paths = sorted(paths)
-    
+
     print(f"Generated {len(paths)} unique solution patterns")
-    
+
     # Generate train and test sets with REAL variations
     train_data, test_data = generate_grids_with_variations(
-        paths, rows, cols, args.seed, 
+        paths, rows, cols, args.seed,
         num_variations=args.variations,
-        train_split=args.train_split
+        train_split=args.train_split,
+        data_dir=data_dir
     )
-    
+
     # Save datasets with metadata
-    save_datasets(train_data, test_data, metadata)
+    save_datasets(train_data, test_data, metadata, data_dir=data_dir)
     check_duplicates(train_data, test_data)
 
     print(f"\n{'='*60}")
     print("Dataset generation complete!")
     print(f"{'='*60}")
-    print(f"Train images: data/grids/train/")
-    print(f"Test images:  data/grids/test/")
-    print(f"Train JSON:   data/train_sequences.json")
-    print(f"Test JSON:    data/test_sequences.json")
+    print(f"Train images: {data_dir}/grids/train/")
+    print(f"Test images:  {data_dir}/grids/test/")
+    print(f"Train JSON:   {data_dir}/train_sequences.json")
+    print(f"Test JSON:    {data_dir}/test_sequences.json")
     print(f"{'='*60}\n")
