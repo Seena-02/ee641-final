@@ -1,7 +1,7 @@
 {
-  "total_failures": 5943,
+  "total_failures": 5159,
   "failure_types": {
-    "hit_wall": 5901,
-    "out_of_bounds": 42
+    "hit_wall": 5158,
+    "out_of_bounds": 1
   }
 }

@@ -118,15 +118,13 @@ Open `analyze_results.ipynb` and run all cells. It automatically discovers all t
 
 | Metric | 4x4 | 5x5 | 7x7 |
 |--------|-----|-----|-----|
-| Test Samples | 600 | 1,400 | TBD |
-| Exact Match | 5.7% | 17.7% | TBD |
-| Valid Solution Rate | 54.2% | 82.6% | TBD |
-| Creative Solutions | 48.5% | 64.9% | TBD |
-| Train Accuracy | 73.2% | 74.8% | TBD |
-| Training Loss | 0.1377 | 0.1139 | TBD |
-| Generalization Gap | 67.6% | 57.2% | TBD |
-
-7x7 is pending training with a scaled-up architecture (256-dim, 4-layer, 4 heads).
+| Test Samples | 600 | 1,400 | 9,250 |
+| Exact Match | 5.7% | 17.7% | 11.8% |
+| Valid Solution Rate | 54.2% | 82.6% | 44.2% |
+| Creative Solutions | 48.5% | 64.9% | 32.4% |
+| Train Accuracy | 73.2% | 74.8% | 46.8% |
+| Training Loss | 0.1377 | 0.1139 | 0.1696 |
+| Generalization Gap | 67.6% | 57.2% | 34.9% |
 
 ### Understanding the Metrics
 
@@ -149,24 +147,26 @@ This is why valid solution rate is the true performance metric. Exact match unde
 
 The dominant failure mode is wall collision:
 
-| Failure Type | 4x4 | 5x5 |
-|-------------|-----|-----|
-| Hit Wall | 270 (98.2%) | 219 (90.1%) |
-| Out of Bounds | 5 (1.8%) | 24 (9.9%) |
+| Failure Type | 4x4 | 5x5 | 7x7 |
+|-------------|-----|-----|-----|
+| Hit Wall | 270 (98.2%) | 219 (90.1%) | 5,158 (>99.9%) |
+| Out of Bounds | 5 (1.8%) | 24 (9.9%) | 1 (<0.1%) |
 
-The model understands general maze navigation but occasionally misjudges wall positions.
+The model understands general maze navigation but occasionally misjudges wall positions. As grid size increases, wall collisions become the near-exclusive failure mode, suggesting the model learns boundary awareness but struggles with increasingly complex wall layouts.
 
 ## Key Discoveries
 
-1. **Valid solution rate is the true metric** — exact match accuracy severely underestimates model performance. A model scoring 5.7% exact match actually solves 54.2% of mazes correctly.
+1. **Valid solution rate is the true metric** — exact match accuracy severely underestimates model performance. A model scoring 5.7% exact match actually solves 54.2% of mazes correctly. Even at 7x7 scale, 11.8% exact match translates to 44.2% valid solutions.
 
-2. **Creative solutions prove spatial reasoning** — 48-65% of valid solutions use different paths than training data, demonstrating the model learned navigation principles rather than memorizing sequences.
+2. **Creative solutions prove spatial reasoning** — 32-65% of valid solutions use different paths than training data, demonstrating the model learned navigation principles rather than memorizing sequences.
 
 3. **CNNs beat ViT for grid tasks** — ViT pretrained on ImageNet achieved 0% accuracy after 300 epochs. ResNet18's convolutional architecture naturally captures local spatial patterns (walls, paths, corridors).
 
 4. **Data quality over quantity** — initial maze generation placed obstacles decoratively (away from paths), making all variations structurally identical. Strategic obstacle placement near the solution path creates meaningful diversity.
 
-5. **Model capacity must match task complexity** — the 128-dim, 2-layer architecture works well for 4x4/5x5 (20-70 solutions) but 7x7 (924 solutions) requires scaling to 256-dim, 4-layer.
+5. **Model capacity must match task complexity** — the 128-dim, 2-layer architecture works well for 4x4/5x5 (20-70 solutions). The scaled 256-dim, 4-layer model handles 7x7 (924 solutions) but shows diminished performance, indicating the combinatorial explosion of paths remains challenging.
+
+6. **Scaling reveals a complexity wall** — performance drops from 82.6% (5x5) to 44.2% (7x7) valid solution rate despite a 4x larger model, suggesting the problem difficulty grows faster than linear model scaling can compensate.
 
 ## Results Directory
 
@@ -182,5 +182,5 @@ results/
 ├── 5x5/
 │   └── (same structure)
 └── 7x7/
-    └── (TBD — pending training)
+    └── (same structure)
 ```
