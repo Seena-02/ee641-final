@@ -1,47 +1,41 @@
-Maze Solver Results - 4×4 Grid
+Maze Solver Results - 4x4 Grid
 ======================================================================
 
-Generated: 2025-12-02 19:58:13
+Generated: 2026-03-22 21:41:29
 
 Model Configuration:
   Architecture: ResNet18 + GPT2 with Prefix-Tuning
   Hidden size: 128-dim
   Layers: 2
   Attention heads: 2
-  Prefix tokens: 8
-  Total parameters: 11,952,320
+  Prefix tokens: 16
+  Total parameters: 12,215,488
 
 Dataset:
   Test samples: 600
-  Grid size: 4×4
+  Grid size: 4x4
 
 Performance Metrics:
-  Exact Match Accuracy:    7.3%
-  Valid Solution Rate:     61.0%
-  Creative Solutions:      53.7%
-  Invalid Solutions:       39.0%
+  Exact Match Accuracy:    5.7%
+  Valid Solution Rate:     54.2%
+  Creative Solutions:      48.5%
+  Invalid Solutions:       45.8%
 
 Breakdown:
-  Exact matches:         44 (7.3%)
-  Creative solutions:   322 (53.7%)
-  Invalid solutions:    234 (39.0%)
+  Exact matches:         34 (5.7%)
+  Creative solutions:   291 (48.5%)
+  Invalid solutions:    275 (45.8%)
 
 
 Training Metrics:
-  Final loss: 0.1721
-  Train accuracy (exact): 71.4%
-  Test accuracy (exact): 7.3%
-  Generalization gap: 64.1%
+  Final loss: 0.1377
+  Train accuracy (exact): 73.2%
+  Test accuracy (exact): 5.7%
+  Generalization gap: 67.6%
 
 
 Failure Analysis:
-  Hit Wall: 230
-  Out Of Bounds: 4
+  Hit Wall: 270
+  Out Of Bounds: 5
 
-======================================================================
-
-Interpretation:
-⚠️  MODERATE: Model is learning but struggling
-   → Consider more training epochs or regularization
-   → May need architecture adjustments
 ======================================================================

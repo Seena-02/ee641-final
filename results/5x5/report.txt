@@ -1,47 +1,41 @@
-Maze Solver Results - 5×5 Grid
+Maze Solver Results - 5x5 Grid
 ======================================================================
 
-Generated: 2025-12-02 20:40:44
+Generated: 2026-03-22 21:42:45
 
 Model Configuration:
   Architecture: ResNet18 + GPT2 with Prefix-Tuning
   Hidden size: 128-dim
   Layers: 2
   Attention heads: 2
-  Prefix tokens: 8
-  Total parameters: 11,952,320
+  Prefix tokens: 16
+  Total parameters: 12,215,488
 
 Dataset:
   Test samples: 1400
-  Grid size: 5×5
+  Grid size: 5x5
 
 Performance Metrics:
-  Exact Match Accuracy:    13.1%
-  Valid Solution Rate:     70.1%
-  Creative Solutions:      57.0%
-  Invalid Solutions:       29.9%
+  Exact Match Accuracy:    17.7%
+  Valid Solution Rate:     82.6%
+  Creative Solutions:      64.9%
+  Invalid Solutions:       17.4%
 
 Breakdown:
-  Exact matches:        183 (13.1%)
-  Creative solutions:   798 (57.0%)
-  Invalid solutions:    419 (29.9%)
+  Exact matches:         248 (17.7%)
+  Creative solutions:   909 (64.9%)
+  Invalid solutions:    243 (17.4%)
 
 
 Training Metrics:
-  Final loss: 0.1459
-  Train accuracy (exact): 71.3%
-  Test accuracy (exact): 13.1%
-  Generalization gap: 58.2%
+  Final loss: 0.1139
+  Train accuracy (exact): 74.8%
+  Test accuracy (exact): 17.6%
+  Generalization gap: 57.2%
 
 
 Failure Analysis:
-  Hit Wall: 388
-  Out Of Bounds: 31
+  Hit Wall: 219
+  Out Of Bounds: 24
 
-======================================================================
-
-Interpretation:
-✅ GOOD: Model shows solid generalization
-   → Model learned spatial patterns successfully
-   → Room for improvement with more training/data
 ======================================================================
